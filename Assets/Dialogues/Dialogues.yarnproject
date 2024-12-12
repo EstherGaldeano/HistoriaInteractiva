@@ -1,0 +1,12 @@
+{
+  "projectFileVersion": 2,
+  "sourceFiles": [
+    "Nyx.yarn"
+  ],
+  "excludeFiles": [
+    "**/*~/*"
+  ],
+  "localisation": {},
+  "baseLanguage": "es",
+  "compilerOptions": {}
+}
