@@ -3,11 +3,29 @@ tags:
 ---
 Nyx: Hola qué tal?
 -> Pregunta 1
-    Respuesta a pregunta 1
-
+    <<jump Respuesta1>>
 -> Pregunta 2
-    Respuesta a pregunta 2
-
--> Pregunta 2
-    Respuesta a pregunta 2
+    <<jump Respuesta2>>
+-> Pregunta 3
+    <<jump Respuesta3>>
 ===
+
+title: Respuesta1
+position: -237,224
+---
+Esto es el texto de la respuesta 1
+===
+
+title: Respuesta2
+position: 30,244
+---
+Esto es el texto de la respuesta 2
+===
+
+title: Respuesta3
+position: 264,233
+---
+Esto es el texto de la respuesta 3
+===
+
+
