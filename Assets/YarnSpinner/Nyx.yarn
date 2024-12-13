@@ -1,31 +1,38 @@
 ﻿title: Nyx
 tags:
 ---
-Nyx: Hola qué tal?
--> Pregunta 1
+Nyx: Hola qué tal? ¿Te acuerdas de mi chimenea de fuego imperecedero?
+Nyx: Pues al final no lo era. 
+-> Nyx: Dame ese objeto mágico que tienes y que prende para siempre. Rata.
     <<jump Respuesta1>>
--> Pregunta 2
+-> Nyx: ¿Puedes darme tu objeto mágico para prender fuego por siempre?
     <<jump Respuesta2>>
--> Pregunta 3
+-> Nyx: Por favor, necesito tu objeto mágico para prender fuego por siempre. 
+He de reparar mi chimenea. ¿Necesitas algún favor?
     <<jump Respuesta3>>
 ===
 
 title: Respuesta1
 position: -237,224
 ---
-Esto es el texto de la respuesta 1
+Dragón: Que te pires.
 ===
 
 title: Respuesta2
 position: 30,244
 ---
-Esto es el texto de la respuesta 2
+Dragón: No. Lárgate Nyx. 
 ===
 
 title: Respuesta3
 position: 264,233
 ---
-Esto es el texto de la respuesta 3
+Dragón: Pues no te voy a decir que no.
+Dragón: Mira, al noroeste hay un campamento donde acampa un caballero. Un flipado.
+Dragón: El tío es un friki de las batallitas.
+Dragón: No hace daño a nadie, pero es muy pesao. 
+Dragón: Y no quiero que me pegue la turra otra vez en la taberna.
+Dragón: Convéncelo de que se pire, y el objeto será tuyo.
 ===
 
 
