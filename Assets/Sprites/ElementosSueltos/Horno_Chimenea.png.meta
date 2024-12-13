@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Horno_Chimenea_0: -9008834569492048097
+      Horno_Chimenea_1: -2229263972002903293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

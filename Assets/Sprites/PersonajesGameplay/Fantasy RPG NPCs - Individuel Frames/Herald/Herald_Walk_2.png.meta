@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Herald_Walk_2_0: 7128025569239725396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

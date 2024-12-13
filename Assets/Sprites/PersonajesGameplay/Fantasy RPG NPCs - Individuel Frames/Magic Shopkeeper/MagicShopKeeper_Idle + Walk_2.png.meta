@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MagicShopKeeper_Idle + Walk_2_0: 1329496119403980702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

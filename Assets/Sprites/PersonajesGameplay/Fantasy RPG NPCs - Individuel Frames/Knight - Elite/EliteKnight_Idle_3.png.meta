@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EliteKnight_Idle_3_0: -1259730969842799286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Princess_Idle_3_0: 6745497621756593536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
