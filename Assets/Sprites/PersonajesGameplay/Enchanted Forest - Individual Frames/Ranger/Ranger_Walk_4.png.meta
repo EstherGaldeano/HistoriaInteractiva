@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ranger_Walk_4_0: 8002142886479687443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

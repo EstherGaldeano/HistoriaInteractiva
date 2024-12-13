@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ForestGuardian_walk_2_0: -224341267679075155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

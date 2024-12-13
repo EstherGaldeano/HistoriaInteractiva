@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GnollBrute_Walk_1_0: 264060635556932038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

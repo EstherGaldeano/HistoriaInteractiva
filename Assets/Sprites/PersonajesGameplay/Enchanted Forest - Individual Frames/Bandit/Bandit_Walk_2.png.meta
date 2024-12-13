@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bandit_Walk_2_0: -7510618945086362738
+      Bandit_Walk_2_1: -913555221120928048
+      Bandit_Walk_2_2: -2789802792871305834
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

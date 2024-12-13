@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bear_Walk_2_0: -7058377728475402741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

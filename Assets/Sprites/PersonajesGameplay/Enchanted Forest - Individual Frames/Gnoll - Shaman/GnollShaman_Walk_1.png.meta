@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GnollShaman_Walk_1_0: -3045531257445200398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

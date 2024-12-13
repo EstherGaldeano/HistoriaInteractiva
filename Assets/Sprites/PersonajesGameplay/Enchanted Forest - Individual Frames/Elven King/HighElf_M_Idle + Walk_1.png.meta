@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HighElf_M_Idle + Walk_1_0: -2970106756776227114
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

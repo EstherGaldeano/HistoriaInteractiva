@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GnollOverseer_Idle_2_0: -3329610864820166262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

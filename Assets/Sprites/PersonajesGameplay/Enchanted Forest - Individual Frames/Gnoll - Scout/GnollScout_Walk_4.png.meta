@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GnollScout_Walk_4_0: 5575447915795920918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

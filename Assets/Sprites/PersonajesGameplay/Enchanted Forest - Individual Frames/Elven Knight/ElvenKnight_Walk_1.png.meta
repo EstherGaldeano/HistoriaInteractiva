@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ElvenKnight_Walk_1_0: -1542728914485135764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bandit_Idle_2_0: 3539893527996980347
+      Bandit_Idle_2_1: 8724887378691506643
+      Bandit_Idle_2_2: 8832492935591277767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

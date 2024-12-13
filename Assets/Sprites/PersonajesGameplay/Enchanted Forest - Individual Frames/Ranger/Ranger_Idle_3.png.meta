@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ranger_Idle_3_0: 9074565454492797802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

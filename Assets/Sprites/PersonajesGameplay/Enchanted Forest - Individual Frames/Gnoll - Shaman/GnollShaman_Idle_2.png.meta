@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GnollShaman_Idle_2_0: 4887100715262355472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

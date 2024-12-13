@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Centaur_M_Idle_1_0: -7275658387588609797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

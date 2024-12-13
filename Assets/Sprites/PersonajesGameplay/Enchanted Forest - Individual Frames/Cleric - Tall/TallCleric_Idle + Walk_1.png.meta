@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TallCleric_Idle + Walk_1_0: -4643114676778005703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
