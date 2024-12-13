@@ -3,9 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-   private float moveSpeed = 5f;
-   private Rigidbody2D rigidBody;
-   private Vector2 moveInput;
+    [SerializeField] private float moveSpeed = 5f;
+    
+    private Rigidbody2D rigidBody;
+    private Vector2 moveInput;
 
     void Start()
     {

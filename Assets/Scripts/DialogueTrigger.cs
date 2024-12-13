@@ -16,6 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     void Update()
     {
         if(is_in_talk_area && Input.GetKeyDown(KeyCode.E)){
+            Debug.Log("Entra");
             dialogueRunner.StartDialogue("Nyx");
         }
         
