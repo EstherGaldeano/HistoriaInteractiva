@@ -6,6 +6,9 @@ TagManager:
   tags:
   - NPC
   - Dragon
+  - Knight
+  - Soldier
+  - Librarian
   layers:
   - Default
   - TransparentFX
