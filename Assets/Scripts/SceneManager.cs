@@ -8,6 +8,11 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
+       public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 
       public void Creditos()
     {
