@@ -1,4 +1,6 @@
-﻿title: Nyx
+﻿
+/// CONVERSACION DRAGON
+title: Dragon
 tags:
 ---
 Nyx: Hola qué tal? ¿Te acuerdas de mi chimenea de fuego imperecedero?
@@ -15,7 +17,7 @@ He de reparar mi chimenea. ¿Necesitas algún favor?
 title: Respuesta1
 position: -237,224
 ---
-Dragón: Que te pires.
+Dragón: No.
 ===
 
 title: Respuesta2
@@ -28,11 +30,165 @@ title: Respuesta3
 position: 264,233
 ---
 Dragón: Pues no te voy a decir que no.
-Dragón: Mira, al noroeste hay un campamento donde acampa un caballero. Un flipado.
-Dragón: El tío es un friki de las batallitas.
+Dragón: Mira, detrás de mi granja hay un campamento donde acampa un caballero.
+Dragón: Un flipado. El tío es un friki de las batallitas.
 Dragón: No hace daño a nadie, pero es muy pesao. 
 Dragón: Y no quiero que me pegue la turra otra vez en la taberna.
 Dragón: Convéncelo de que se pire, y el objeto será tuyo.
 ===
 
+title: Dragon2
+---
+Nyx: Ya está. El motivado dice que se va.
+Dragón: Lo prometido es deuda. Aquí tienes el mechero.
+===
 
+
+
+///CONVERSACION CABALLERO
+
+title: Knight1
+---
+Nyx: Hola qué tal? Necesito que vayas. 
+
+Caballero: No.
+
+Nyx: No, si al final muero por congelación. 
+
+-> Nyx: Lárgate. Rata.
+    <<jump RespuestaKnight1>>
+-> Nyx: ¿Tienes la documentación reglamentária para estar aquí? 
+    <<jump RespuestaKnight2>>
+-> Nyx: ¿Qué puedo hacer para que te marches?
+    <<jump RespuestaKnight3>>
+
+===
+
+title: RespuestaKnight1
+position: -237,224
+---
+Caballero: Me han llamado cosas peores. He vivido cosas peores.
+Caballero: Ojalá encontrar algo en esta vida que me ilusione o sorprenda.
+Caballero: Déjame solo con mis historias. A no ser que quieras saber una.
+Caballero: Batallé en el norte hace 15 años, en un reino que no conoces.
+Caballero: Y...
+Nyx: Que te pires.
+Caballero: No.
+===
+
+title: RespuestaKnight2
+position: 30,244
+---
+Caballero: ¿A esto hemos llegado? ¿Quiénes somos para decidir quien
+Caballero: puede habitar la tierra? Una vez me contaron que un rey,
+Caballero: el cual pedía tributos muy altos al pueblo y pedía dinero
+Caballero: hasta las ratas, se encontró con una rebelión del pueblo...
+Nyx: Hablando de ratas, vete.
+Caballero: No.
+===
+
+title: RespuestaKnight3
+position: 264,233
+---
+Caballero: Me gustas. Como todo caballero valiente, te pondré una prueba, una que va
+Caballero: más allá de lo imaginable, una qué...
+Nyx: Bueno vale ya, que quieres.
+Caballero: Ofreceme una história que sorprende a un hombre con muchas histórias.
+Nyx: No te soporto, pero voy a hablar con la bibliotecaria y vuelvo.
+===
+
+title: Knight2
+position: 264,233
+---
+Nyx: Te traigo esta historia. Por las turras que pegas, raro es que hayas leido algo así.
+NYX LE DA LIBRO ROMÁNTICO A CABALLERO
+Caballero: Dame eso, más te vale que sea un buen...
+Caballero: Dioses, esto es...
+Caballero: ¡¿Una novela romántica para un hombre como yo!?
+Caballero: Espera... un momento. Sí, oh sí. Narrativa excelente. Premisa no explorada.
+Caballero: Me interesa mucho que va a ocurrir con la relación de Pamela
+Caballero: y Meredith. Espera... Dioses, cuanto drama... ¿QUÉ ES ESTO QUE ESTOY SINTIENDO?
+Nyx: ¡NO LO SÉ!¡PERO PIRATE!
+Caballero: Tienes razón. Te dije que me iría y me iré. Te doy mi palabra. Pero ahora
+Caballero: déjame a solas con esta historia...
+
+(HABLA DE NUEVO CON EL DRAGÓN)
+===
+
+
+///CONVERSACION SOLDADOS CAMPAMENTO
+
+title: Soldier
+position: 264,233
+---
+Soldado: Habla con mi jefe, yo no soy caballero.
+
+(NO ES EL CABALLERO)
+===
+
+
+
+///CONVERSACION CON BIBLIOTECARIA
+
+title: Librarian1
+tags:
+---
+Nyx: A ver, mira, ya sé que tú y yo no nos caemos bien...
+Bibliotecaria: Tú no le caes bien a nadie, Nyx, eres un borde.
+Nyx: Porque me ponéis enfermo. Pero necesito tu ayuda.
+-> Nyx: Dame un libro que sorprenda a hasta la persona más turra del planeta. No preguntes.
+    <<jump RespuestaLib1>>
+-> Nyx: Yo no pediría nada a una rata de biblioteca como tú. Pero necesito tu ayuda. 
+    <<jump RespuestaLib2>>
+-> Nyx: ¿Qué puedo hacer para que me des un libro? Haré lo que sea.
+    <<jump RespuestaLib3>>
+===
+
+title: RespuestaLib1
+position: -237,224
+---
+Bibliotecaria: ¿Así sin más? Lárgate, Nyx.
+Nyx: ...Rata. 
+===
+
+title: RespuestaLib2
+position: 30,244
+---
+Bibliotecaria: ¿¡Pero a ti que te pasa!? ¡Eso no son formas de pedir favores!
+===
+
+title: RespuestaLib3
+position: 264,233
+---
+Bibliotecaria: Me sorprendes, Nyx, nunca pensé qué fueras capaz de hablar así.
+Nyx: Ni yo.
+Bibliotecaria: Bien Nyx, necesitas relacionarte con la gente de este pueblo.
+Bibliotecaria: Habla con al menos tres personajes y que queden contentos.
+Bibliotecaria: Si lo haces, te daré el libro que necesitas.
+Nyx:...
+RELACIÓNATE CON OTROS ALDEANOS Y QUEDA BIEN CON ELLOS
+===
+
+title: Librarian2
+tags:
+---
+Nyx: Ya está, he hablado con cachos de carne.
+Bibliotecaria: Vaya, al final Nyx tiene un corazón y hace cosas por los demás.
+Nyx: Rat....
+Bibliotecaria: ¿Qué?
+Nyx: Nada.
+Bibliotecaria: Está bien... Toma, por tu esfuerzo.
+(NYX RECIBE UNA NOVELA ROMÁNTICA)
+Nyx: ¿¡En serio!? ¿Pero tú crees que al motivado este le va a gustar esta purria?
+Bibliotecaria: Hazme caso Nyx...
+Nyx: Al final muero de frío.
+===
+
+
+title: Librarian3
+tags:
+---
+Nyx: ¿Como está la rata de biblioteca hoy?
+Bibliotecaria: Pírate Nyx.
+
+===
