@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Herald_Idle_1_0: 837240687614738892
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

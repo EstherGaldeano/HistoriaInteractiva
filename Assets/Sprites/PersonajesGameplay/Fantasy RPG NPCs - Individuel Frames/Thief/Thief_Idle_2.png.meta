@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thief_Idle_2_0: 8647782510902321477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

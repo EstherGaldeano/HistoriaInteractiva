@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MountainKing_Idle + Walk_2_0: 1614061115223685960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

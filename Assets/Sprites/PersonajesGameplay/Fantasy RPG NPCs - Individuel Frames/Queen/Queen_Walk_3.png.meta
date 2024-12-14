@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Queen_Walk_3_0: 7499062502997589283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

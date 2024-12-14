@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Queen_Idle_3_0: 9106358118698698055
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LargeEliteKnight_Idle_3_0: 8857399360895439282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

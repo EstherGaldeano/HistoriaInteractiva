@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bishop_Idle + Walk_4_0: -5258231606549060291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
