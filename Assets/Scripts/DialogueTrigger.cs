@@ -22,14 +22,17 @@ public class DialogueTrigger : MonoBehaviour
             if (this.gameObject.tag == "Dragon" && questDragon == false)
             {
                 Debug.Log("Entra");
-                dialogueRunner.StartDialogue("Nyx");
+                dialogueRunner.StartDialogue("Dragon");
                 //pte código que muestre las dos raw images con los personajes que hablan
                 //Player siempre el mismo, NPC según TAG
-                //Bloquear movimiento de jugador durante el díalogo    
+                //Bloquear movimiento de jugador durante el díalogo
+                
+              
+               
             }
             else if (this.gameObject.tag == "Dragon" && questDragon == true)
             {
-                dialogueRunner.StartDialogue("Nyx2");
+                dialogueRunner.StartDialogue("Dragon2");
             }
 
             //Caballero

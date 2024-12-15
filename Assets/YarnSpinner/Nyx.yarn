@@ -184,11 +184,130 @@ Bibliotecaria: Hazme caso Nyx...
 Nyx: Al final muero de frío.
 ===
 
-
 title: Librarian3
 tags:
 ---
 Nyx: ¿Como está la rata de biblioteca hoy?
 Bibliotecaria: Pírate Nyx.
+===
 
+
+///CONVERSACION PAREJA BAJO BIBLIOTECARIA
+
+title: Couple1
+---
+Nyx: Me da asco el estiércol, dejad de oler así.
+Pareja: Lárgate Nyx.
+===
+
+title: Couple2
+---
+Nyx: Hola. 
+-> Nyx: ¿Es necesario que vistáis iguales?
+	<<jump RespuestaCouple1>>
+-> Nyx: Oléis un poco fuerte. ¿Os ducháis?
+	<<jump RespuestaCouple2>>
+-> Nyx: Me alegro de veros. ¿Como estáis?
+	<<jump RespuestaCouple3>>
+===
+
+title: RespuestaCouple1
+---
+Pareja: Lárgate Nyx.
+===
+
+title: RespuestaCouple2
+---
+Pareja: Es lo que tiene trabajar con estiércol, Nyx.
+Pareja: Ahora estamos haciendo un descanso. Déjanos.
+===
+
+title: RespuestaCouple3
+---
+Pareja: ¡Oh! Muy bien, gracias Nyx. ¡Qué agradable estás hoy!
+Nyx: ...
+Pareja: Cuídate Nyx.
+
+¿VES QUÉ FÁCIL? HAS QUEDADO BIEN CON LA PAREJA
+===
+
+
+///CONVERSACIÓN CLERIGO
+
+title: Cleric1
+---
+Clérigo: ¿Cómo estás, Nyx? Me alegro de verte.
+Nyx: Déjame.
+===
+
+title: Cleric2
+---
+Nyx: Ehmm...
+-> Qué calladas son tus hermanas. Las miro y no dicen nada.
+	<<jump RespuestaCleric1>>
+-> El celibato tiene que ser duro... 
+	<<jump RespuestaCleric2>>
+-> Me alegro de verte. Hoy irradias fe.
+	<<jump RespuestaCleric3>>
+===
+
+title: RespuestaCleric1
+---
+Clérigo: ¡Porque están haciendo voto de silencio! ¡Déjalas en paz!
+Nyx: Perdón.
+===
+
+title: RespuestaCleric2
+---
+Clérigo: ¡Basta Nyx!
+Nyx: Perdón.
+===
+
+title: RespuestaCleric3
+---
+Clérigo: ¡VAYA! Me alegro de verte también. ¿Todo bien?
+Nyx: No mucho.
+Clérigo: Bueno, confesar pecados ayuda.
+Nyx: ...Me alegro de verte. Adiós.
+
+¡HAS QUEDADO BIEN CON EL CLÉRIGO!
+===  
+
+
+///CONVERSACION ARQUERO
+
+title: Archer1
+---
+Nyx: ¿Qué miras? Este lago no tiene nada de bonito.
+Arquero: Déjame Nyx.
+===
+
+title: Archer2
+---
+Nyx: Bueno, a ver...
+
+-> Bonito arco ¿Jugamos a tirar flechas a la gente? Lo pasaremos bien.
+	<<jump RespuestaArcher1>>
+-> (Intentar empujar al arquero al agua para gastarle una broma)
+	<<jump RespuestaArcher2>>
+-> Hola. Siento molestarte. Solo quería saber si estás bien. Pareces desanimado.
+	<<jump RespuestaArcher3>>
+===
+
+title: RespuestaArcher1
+---
+Arquero: ¡Pero a ti que te pasa por la cabeza! Vete.
+===
+
+title: RespuestaArcher2
+---
+Arquero: ¡ESTATE QUIETO NYX!¡NO TIENE GRACIA!¡VETE!
+===
+
+title: RespuestaArcher3
+---
+Arquero: Oh...Bueno, a veces tengo días así. Prefiero estar solo.
+Arquero: ¡Pero gracias Nyx! ¡Me alegra saber que te preocupas por las personas del pueblo!
+
+HAS QUEDADO BIEN CON EL ARQUERO
 ===
