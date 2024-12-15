@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 9ef63f610dd0d604b956e889e0959ff7
+guid: 176fda1538755aa48b3e33c5b4bd0572
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9008834569492048097
-    second: Horno_Chimenea_0
+      213: 6592251703706146087
+    second: nyx_walkRight_0
   - first:
-      213: -2229263972002903293
-    second: Horno_Chimenea_1
+      213: -3336467824099518761
+    second: nyx_walkRight_1
+  - first:
+      213: -4819046966522171881
+    second: nyx_walkRight_2
+  - first:
+      213: 4320297762880566714
+    second: nyx_walkRight_3
+  - first:
+      213: -5136830167741077817
+    second: nyx_walkRight_4
+  - first:
+      213: 1120496821217928863
+    second: nyx_walkRight_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,12 +102,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Horno_Chimenea_0
+      name: nyx_walkRight_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 17
-        height: 17
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f17da2d90b03af280800000000000000
-      internalID: -9008834569492048097
+      spriteID: 7255e5d4ff16c7b50800000000000000
+      internalID: 6592251703706146087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Horno_Chimenea_1
+      name: nyx_walkRight_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 18
-        height: 17
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30bc0368a301011e0800000000000000
-      internalID: -2229263972002903293
+      spriteID: 7d6170cf03c72b1d0800000000000000
+      internalID: -3336467824099518761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nyx_walkRight_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ea58cf05e4f1db0800000000000000
+      internalID: -4819046966522171881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nyx_walkRight_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab53968ece7c4fb30800000000000000
+      internalID: 4320297762880566714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nyx_walkRight_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c66844bd2056b8b0800000000000000
+      internalID: -5136830167741077817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nyx_walkRight_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9626a81cedcc8f00800000000000000
+      internalID: 1120496821217928863
       vertices: []
       indices: 
       edges: []
@@ -150,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1dd61fbf7fa7c0043918b85c5b346d0a
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Horno_Chimenea_0: -9008834569492048097
-      Horno_Chimenea_1: -2229263972002903293
+      nyx_walkRight_0: 6592251703706146087
+      nyx_walkRight_1: -3336467824099518761
+      nyx_walkRight_2: -4819046966522171881
+      nyx_walkRight_3: 4320297762880566714
+      nyx_walkRight_4: -5136830167741077817
+      nyx_walkRight_5: 1120496821217928863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 9ef63f610dd0d604b956e889e0959ff7
+guid: dab481a33f0b70141888772f27149bfc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9008834569492048097
-    second: Horno_Chimenea_0
-  - first:
-      213: -2229263972002903293
-    second: Horno_Chimenea_1
+      213: 8568544352864113774
+    second: Horno_ChimeneaApagada_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,12 +87,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 10
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Horno_Chimenea_0
+      name: Horno_ChimeneaApagada_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f17da2d90b03af280800000000000000
-      internalID: -9008834569492048097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Horno_Chimenea_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30bc0368a301011e0800000000000000
-      internalID: -2229263972002903293
+      spriteID: e6415aad0b599e670800000000000000
+      internalID: 8568544352864113774
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Horno_Chimenea_0: -9008834569492048097
-      Horno_Chimenea_1: -2229263972002903293
+      Horno_ChimeneaApagada_0: 8568544352864113774
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

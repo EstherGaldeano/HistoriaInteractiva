@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 5b151808e2f088a449f8e65f0c67d8ca
+guid: 054556058096dd641a0c02c56d6037ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8657864558633058499
-    second: Gato_GOTICO_WALK_0
+      213: -2047557082564716532
+    second: nyx_walkLeft_0
   - first:
-      213: -271111214920094777
-    second: Gato_GOTICO_WALK_1
+      213: -1038679829356234755
+    second: nyx_walkLeft_1
   - first:
-      213: 4385876913180820410
-    second: Gato_GOTICO_WALK_2
+      213: -3950261493989843120
+    second: nyx_walkLeft_2
   - first:
-      213: -6484736119115981082
-    second: Gato_GOTICO_WALK_3
+      213: 6963011647341912416
+    second: nyx_walkLeft_3
   - first:
-      213: 280327303456180012
-    second: Gato_GOTICO_WALK_4
+      213: -5407146295080806935
+    second: nyx_walkLeft_4
   - first:
-      213: -5296567168715537050
-    second: Gato_GOTICO_WALK_5
+      213: -747997185822124011
+    second: nyx_walkLeft_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gato_GOTICO_WALK_0
+      name: nyx_walkLeft_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 63
-        width: 22
-        height: 30
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c084cad1f9e62870800000000000000
-      internalID: 8657864558633058499
+      spriteID: c08156c8ead9593e0800000000000000
+      internalID: -2047557082564716532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gato_GOTICO_WALK_1
+      name: nyx_walkLeft_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 63
-        width: 22
-        height: 30
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cb201459c1dc3cf0800000000000000
-      internalID: -271111214920094777
+      spriteID: df7bbd7c23ed591f0800000000000000
+      internalID: -1038679829356234755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gato_GOTICO_WALK_2
+      name: nyx_walkLeft_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 31
-        width: 22
-        height: 30
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab3cabea0d3cddc30800000000000000
-      internalID: 4385876913180820410
+      spriteID: 05fd4d0c91add29c0800000000000000
+      internalID: -3950261493989843120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gato_GOTICO_WALK_3
+      name: nyx_walkLeft_3
       rect:
         serializedVersion: 2
-        x: 37
-        y: 31
-        width: 22
-        height: 30
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ee52f57bd69106a0800000000000000
-      internalID: -6484736119115981082
+      spriteID: 061e8be933691a060800000000000000
+      internalID: 6963011647341912416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gato_GOTICO_WALK_4
+      name: nyx_walkLeft_4
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 22
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c27495f723ce3e300800000000000000
-      internalID: 280327303456180012
+      spriteID: 9e59329c715f5f4b0800000000000000
+      internalID: -5407146295080806935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gato_GOTICO_WALK_5
+      name: nyx_walkLeft_5
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 22
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 665c6b3f830de76b0800000000000000
-      internalID: -5296567168715537050
+      spriteID: 5189416c5849e95f0800000000000000
+      internalID: -747997185822124011
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 605a615af096d1a4f8db95050c292fb2
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gato_GOTICO_WALK_0: 8657864558633058499
-      Gato_GOTICO_WALK_1: -271111214920094777
-      Gato_GOTICO_WALK_2: 4385876913180820410
-      Gato_GOTICO_WALK_3: -6484736119115981082
-      Gato_GOTICO_WALK_4: 280327303456180012
-      Gato_GOTICO_WALK_5: -5296567168715537050
+      nyx_walkLeft_0: -2047557082564716532
+      nyx_walkLeft_1: -1038679829356234755
+      nyx_walkLeft_2: -3950261493989843120
+      nyx_walkLeft_3: 6963011647341912416
+      nyx_walkLeft_4: -5407146295080806935
+      nyx_walkLeft_5: -747997185822124011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
