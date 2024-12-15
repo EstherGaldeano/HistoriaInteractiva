@@ -1,33 +1,36 @@
 ﻿
 /// CONVERSACION DRAGON
-title: Dragon
+title: Dragon1
 tags:
+position: -418,-585
 ---
-Nyx: Hola qué tal? ¿Te acuerdas de mi chimenea de fuego imperecedero?
+<<declare $phaseDragon = 1 as number>>
+
+Nyx: Hola, ¿qué tal? ¿Te acuerdas de mi chimenea de fuego imperecedero?
 Nyx: Pues al final no lo era. 
 -> Nyx: Dame ese objeto mágico que tienes y que prende para siempre. Rata.
-    <<jump Respuesta1>>
+    <<jump Dragon1a>>
 -> Nyx: ¿Puedes darme tu objeto mágico para prender fuego por siempre?
-    <<jump Respuesta2>>
+    <<jump Dragon1b>>
 -> Nyx: Por favor, necesito tu objeto mágico para prender fuego por siempre. 
-He de reparar mi chimenea. ¿Necesitas algún favor?
-    <<jump Respuesta3>>
+Nyx:He de reparar mi chimenea. ¿Necesitas algún favor?
+    <<jump Dragon1c>>
 ===
 
-title: Respuesta1
-position: -237,224
+title: Dragon1a
+position: -153,-720
 ---
 Dragón: No.
 ===
 
-title: Respuesta2
-position: 30,244
+title: Dragon1b
+position: -153,-584
 ---
 Dragón: No. Lárgate Nyx. 
 ===
 
-title: Respuesta3
-position: 264,233
+title: Dragon1c
+position: -154,-447
 ---
 Dragón: Pues no te voy a decir que no.
 Dragón: Mira, detrás de mi granja hay un campamento donde acampa un caballero.
@@ -35,37 +38,56 @@ Dragón: Un flipado. El tío es un friki de las batallitas.
 Dragón: No hace daño a nadie, pero es muy pesao. 
 Dragón: Y no quiero que me pegue la turra otra vez en la taberna.
 Dragón: Convéncelo de que se pire, y el objeto será tuyo.
+<<set $phaseDragon = 3>>
+<<set $phaseKnight = 2>>
 ===
 
-title: Dragon2
+title: Dragon3
+position: -418,-447
+---
+Dragón: Convéncelo de que se pire, y el objeto será tuyo.
+===
+
+title: Dragon4
+position: -418,-312
 ---
 Nyx: Ya está. El motivado dice que se va.
 Dragón: Lo prometido es deuda. Aquí tienes el mechero.
+<<set $phaseDragon = 5>>
 ===
-
 
 
 ///CONVERSACION CABALLERO
 
 title: Knight1
+position: 145,-721
 ---
-Nyx: Hola qué tal? Necesito que vayas. 
+<<declare $phaseKnight = 1 as number>>
+
+Caballero: ¿Has visto que hoguera más guapa nos hemos montado?
+Nyx: Encima cachondeo.
+===
+
+title: Knight2
+position: 146,-583
+---
+Nyx: Hola, ¿qué tal? Necesito que te vayas. 
 
 Caballero: No.
 
 Nyx: No, si al final muero por congelación. 
 
 -> Nyx: Lárgate. Rata.
-    <<jump RespuestaKnight1>>
--> Nyx: ¿Tienes la documentación reglamentária para estar aquí? 
-    <<jump RespuestaKnight2>>
+    <<jump Knight2a>>
+-> Nyx: ¿Tienes la documentación reglamentaria para estar aquí? 
+    <<jump Knight2b>>
 -> Nyx: ¿Qué puedo hacer para que te marches?
-    <<jump RespuestaKnight3>>
+    <<jump Knight2c>>
 
 ===
 
-title: RespuestaKnight1
-position: -237,224
+title: Knight2a
+position: 421,-719
 ---
 Caballero: Me han llamado cosas peores. He vivido cosas peores.
 Caballero: Ojalá encontrar algo en esta vida que me ilusione o sorprenda.
@@ -76,8 +98,8 @@ Nyx: Que te pires.
 Caballero: No.
 ===
 
-title: RespuestaKnight2
-position: 30,244
+title: Knight2b
+position: 422,-582
 ---
 Caballero: ¿A esto hemos llegado? ¿Quiénes somos para decidir quien
 Caballero: puede habitar la tierra? Una vez me contaron que un rey,
@@ -87,18 +109,26 @@ Nyx: Hablando de ratas, vete.
 Caballero: No.
 ===
 
-title: RespuestaKnight3
-position: 264,233
+title: Knight2c
+position: 421,-445
 ---
 Caballero: Me gustas. Como todo caballero valiente, te pondré una prueba, una que va
 Caballero: más allá de lo imaginable, una qué...
 Nyx: Bueno vale ya, que quieres.
-Caballero: Ofreceme una história que sorprende a un hombre con muchas histórias.
+Caballero: Ofreceme una historia que sorprende a un hombre con muchas historias.
 Nyx: No te soporto, pero voy a hablar con la bibliotecaria y vuelvo.
+<<set $phaseKnight = 3>>
+<<set $phaseLib = 2>>
 ===
 
-title: Knight2
-position: 264,233
+title: Knight3
+position: 146,-444
+---
+Caballero: Ofreceme una historia que sorprende a un hombre con muchas historias.
+===
+
+title: Knight4
+position: 146,-308
 ---
 Nyx: Te traigo esta historia. Por las turras que pegas, raro es que hayas leido algo así.
 NYX LE DA LIBRO ROMÁNTICO A CABALLERO
@@ -111,15 +141,28 @@ Caballero: y Meredith. Espera... Dioses, cuanto drama... ¿QUÉ ES ESTO QUE ESTO
 Nyx: ¡NO LO SÉ!¡PERO PIRATE!
 Caballero: Tienes razón. Te dije que me iría y me iré. Te doy mi palabra. Pero ahora
 Caballero: déjame a solas con esta historia...
+(HABLA DE NUEVO CON EL DRAGÓN)
+<<set $phaseKnight = 5>>
+<<set $phaseDragon = 4>>
+===
 
+title: Knight5
+position: 146,-176
+---
+Caballero: déjame a solas con esta historia...
 (HABLA DE NUEVO CON EL DRAGÓN)
 ===
 
-
 ///CONVERSACION SOLDADOS CAMPAMENTO
 
-title: Soldier
-position: 264,233
+title: Soldier1
+position: 145,-1034
+---
+Soldado: ...
+===
+
+title: Soldier2
+position: 145,-896
 ---
 Soldado: Habla con mi jefe, yo no soy caballero.
 
@@ -127,38 +170,48 @@ Soldado: Habla con mi jefe, yo no soy caballero.
 ===
 
 
-
 ///CONVERSACION CON BIBLIOTECARIA
 
 title: Librarian1
 tags:
+position: 695,-719
+---
+<<declare $phaseLib = 1 as number>>
+
+Nyx: ¿Como está la rata de biblioteca hoy?
+Bibliotecaria: Pírate Nyx.
+===
+
+title: Librarian2
+tags:
+position: 695,-583
 ---
 Nyx: A ver, mira, ya sé que tú y yo no nos caemos bien...
 Bibliotecaria: Tú no le caes bien a nadie, Nyx, eres un borde.
 Nyx: Porque me ponéis enfermo. Pero necesito tu ayuda.
 -> Nyx: Dame un libro que sorprenda a hasta la persona más turra del planeta. No preguntes.
-    <<jump RespuestaLib1>>
+    <<jump Librarian2a>>
 -> Nyx: Yo no pediría nada a una rata de biblioteca como tú. Pero necesito tu ayuda. 
-    <<jump RespuestaLib2>>
+    <<jump Librarian2b>>
 -> Nyx: ¿Qué puedo hacer para que me des un libro? Haré lo que sea.
-    <<jump RespuestaLib3>>
+    <<jump Librarian2c>>
 ===
 
-title: RespuestaLib1
-position: -237,224
+title: Librarian2a
+position: 985,-726
 ---
 Bibliotecaria: ¿Así sin más? Lárgate, Nyx.
 Nyx: ...Rata. 
 ===
 
-title: RespuestaLib2
-position: 30,244
+title: Librarian2b
+position: 987,-587
 ---
 Bibliotecaria: ¿¡Pero a ti que te pasa!? ¡Eso no son formas de pedir favores!
 ===
 
-title: RespuestaLib3
-position: 264,233
+title: Librarian2c
+position: 989,-446
 ---
 Bibliotecaria: Me sorprendes, Nyx, nunca pensé qué fueras capaz de hablar así.
 Nyx: Ni yo.
@@ -166,11 +219,21 @@ Bibliotecaria: Bien Nyx, necesitas relacionarte con la gente de este pueblo.
 Bibliotecaria: Habla con al menos tres personajes y que queden contentos.
 Bibliotecaria: Si lo haces, te daré el libro que necesitas.
 Nyx:...
+<<set $phaseLib = 3>>
 RELACIÓNATE CON OTROS ALDEANOS Y QUEDA BIEN CON ELLOS
+<<declare $peopleHelped = 0 as number>>
 ===
 
-title: Librarian2
+title: Librarian3
 tags:
+position: 696,-443
+---
+Bibliotecaria: Habla con al menos tres personajes y que queden contentos.
+===
+
+title: Librarian4
+tags:
+position: 697,-303
 ---
 Nyx: Ya está, he hablado con cachos de carne.
 Bibliotecaria: Vaya, al final Nyx tiene un corazón y hace cosas por los demás.
@@ -182,51 +245,64 @@ Bibliotecaria: Está bien... Toma, por tu esfuerzo.
 Nyx: ¿¡En serio!? ¿Pero tú crees que al motivado este le va a gustar esta purria?
 Bibliotecaria: Hazme caso Nyx...
 Nyx: Al final muero de frío.
+<<set $phaseLib = 5>>
+<<set $phaseKnight = 4>>
+(HABLA DE NUEVO CON EL CABALLERO)
 ===
 
-title: Librarian3
+title: Librarian5
 tags:
+position: 697,-165
 ---
-Nyx: ¿Como está la rata de biblioteca hoy?
-Bibliotecaria: Pírate Nyx.
+Bibliotecaria: Hazme caso Nyx...
+(HABLA DE NUEVO CON EL CABALLERO)
 ===
 
 
 ///CONVERSACION PAREJA BAJO BIBLIOTECARIA
 
 title: Couple1
+position: 146,49
 ---
+<<declare $coupleHelped = false as bool>>
 Nyx: Me da asco el estiércol, dejad de oler así.
 Pareja: Lárgate Nyx.
 ===
 
 title: Couple2
+position: 145,189
 ---
 Nyx: Hola. 
 -> Nyx: ¿Es necesario que vistáis iguales?
-	<<jump RespuestaCouple1>>
+	<<jump Couple2a>>
 -> Nyx: Oléis un poco fuerte. ¿Os ducháis?
-	<<jump RespuestaCouple2>>
+	<<jump Couple2b>>
 -> Nyx: Me alegro de veros. ¿Como estáis?
-	<<jump RespuestaCouple3>>
+	<<jump Couple2c>>
 ===
 
-title: RespuestaCouple1
+title: Couple2a
+position: 426,48
 ---
 Pareja: Lárgate Nyx.
 ===
 
-title: RespuestaCouple2
+title: Couple2b
+position: 425,189
 ---
 Pareja: Es lo que tiene trabajar con estiércol, Nyx.
 Pareja: Ahora estamos haciendo un descanso. Déjanos.
 ===
 
-title: RespuestaCouple3
+title: Couple2c
+position: 425,332
 ---
 Pareja: ¡Oh! Muy bien, gracias Nyx. ¡Qué agradable estás hoy!
 Nyx: ...
 Pareja: Cuídate Nyx.
+
+<<set $peopleHelped += 1>>
+<<set $coupleHelped = true>>
 
 ¿VES QUÉ FÁCIL? HAS QUEDADO BIEN CON LA PAREJA
 ===
@@ -235,40 +311,49 @@ Pareja: Cuídate Nyx.
 ///CONVERSACIÓN CLERIGO
 
 title: Cleric1
+position: 691,48
 ---
+<<declare $clericHelped = false as bool>>
 Clérigo: ¿Cómo estás, Nyx? Me alegro de verte.
 Nyx: Déjame.
 ===
 
 title: Cleric2
+position: 690,187
 ---
 Nyx: Ehmm...
 -> Qué calladas son tus hermanas. Las miro y no dicen nada.
-	<<jump RespuestaCleric1>>
+	<<jump Cleric2a>>
 -> El celibato tiene que ser duro... 
-	<<jump RespuestaCleric2>>
+	<<jump Cleric2b>>
 -> Me alegro de verte. Hoy irradias fe.
-	<<jump RespuestaCleric3>>
+	<<jump Cleric2c>>
 ===
 
-title: RespuestaCleric1
+title: Cleric2a
+position: 977,42
 ---
 Clérigo: ¡Porque están haciendo voto de silencio! ¡Déjalas en paz!
 Nyx: Perdón.
 ===
 
-title: RespuestaCleric2
+title: Cleric2b
+position: 978,186
 ---
 Clérigo: ¡Basta Nyx!
 Nyx: Perdón.
 ===
 
-title: RespuestaCleric3
+title: Cleric2c
+position: 978,328
 ---
 Clérigo: ¡VAYA! Me alegro de verte también. ¿Todo bien?
 Nyx: No mucho.
 Clérigo: Bueno, confesar pecados ayuda.
 Nyx: ...Me alegro de verte. Adiós.
+
+<<set $peopleHelped += 1>>
+<<set $clericHelped = true>>
 
 ¡HAS QUEDADO BIEN CON EL CLÉRIGO!
 ===  
@@ -277,37 +362,403 @@ Nyx: ...Me alegro de verte. Adiós.
 ///CONVERSACION ARQUERO
 
 title: Archer1
+position: -421,48
 ---
+<<declare $archerHelped = false as bool>>
 Nyx: ¿Qué miras? Este lago no tiene nada de bonito.
 Arquero: Déjame Nyx.
 ===
 
 title: Archer2
+position: -421,190
 ---
 Nyx: Bueno, a ver...
 
 -> Bonito arco ¿Jugamos a tirar flechas a la gente? Lo pasaremos bien.
-	<<jump RespuestaArcher1>>
+	<<jump Archer2a>>
 -> (Intentar empujar al arquero al agua para gastarle una broma)
-	<<jump RespuestaArcher2>>
+	<<jump Archer2b>>
 -> Hola. Siento molestarte. Solo quería saber si estás bien. Pareces desanimado.
-	<<jump RespuestaArcher3>>
+	<<jump Archer2c>>
 ===
 
-title: RespuestaArcher1
+title: Archer2a
+position: -151,48
 ---
 Arquero: ¡Pero a ti que te pasa por la cabeza! Vete.
 ===
 
-title: RespuestaArcher2
+title: Archer2b
+position: -152,190
 ---
 Arquero: ¡ESTATE QUIETO NYX!¡NO TIENE GRACIA!¡VETE!
 ===
 
-title: RespuestaArcher3
+title: Archer2c
+position: -151,327
 ---
 Arquero: Oh...Bueno, a veces tengo días así. Prefiero estar solo.
 Arquero: ¡Pero gracias Nyx! ¡Me alegra saber que te preocupas por las personas del pueblo!
 
+<<set $peopleHelped += 1>>
+<<set $archerHelped = true>>
+
 HAS QUEDADO BIEN CON EL ARQUERO
+===
+
+
+//CONVERSACION ELFO FLORES
+
+///Conversación default antes de la questLibrarian
+title: Elf1
+position: -421,556
+---
+<<declare $elfHelped = false as bool>>
+Nyx: Mira, un elfo. Conocidos por su inmortalidad, gracia y narcisismo.
+Elfo: Que tengas también un buen día, Nyx.
+===
+
+///Conversación para questLibrarian
+title: Elf2
+position: -420,700
+---
+Nyx: Vamos a ver...
+-> ¿A qué edad os volvéis sosos los elfos? ¿O sois así de nacimiento?
+    <<jump Elf2a>>
+-> ¿A los elfos se os da algo mal en la vida?
+    <<jump Elf2b>>
+-> Me pregunto si sigues teniendo inquietudes después de tantos años...
+    <<jump Elf2c>>
+===
+
+title: Elf2a
+position: -157,556
+---
+Elfo: Mejor ser soso que ser un estúpido ¿verdad... Nyx?
+Nyx: Cállate rata.
+Elfo: Hablas de las ratas como si fueran malas, y son seres vivos que...
+Nyx:  Hay algo peor en esta vida que ser una rata. Ser un turras.
+===
+
+title: Elf2b
+position: -155,701
+---
+Elfo: Hacemos cosas mal y aprendemos de ello. Es algo que a ti te cuesta entender. 
+Nyx: Me cuesta entender que alguien te soporte. Rata.
+===
+
+title: Elf2c
+position: -155,845
+---
+Elfo: Vaya...No esperaba una pregunta tan profunda por tu parte...
+Elfo: Por supuesto que sigo teniendo inquietudes. Pero intento dejarme llevar
+Elfo: como esta flor se deja mecer por el viento. 
+Nyx:...
+Elfo: Creo que voy a escribir una canción sobre ello. Gracias, Nyx.
+Nyx: Por favor, no menciones mi nombre en la canción. Los mortales apreciamos tener dignidad.
+
+<<set $peopleHelped += 1>>
+<<set $elfHelped = true>>
+
+¡HAS QUEDADO BIEN CON EL ELFO!
+=== 
+
+
+///CONVERSACION SETAS
+
+///Conversación default antes de la questLibrarian
+title: Mushrooms1
+position: 142,555
+---
+<<declare $mushroomsHelped = false as bool>>
+Nyx: No sé ni como dirigirme a vosotras.
+Setas: (LAS SETAS MIRAN FIJAMENTE A NYX SIN EXPRESIÓN)
+===
+
+///Conversación para questLibrarian
+title: Mushrooms2
+position: 143,702
+---
+Nyx: Esto va a ser difícil
+-> ¿Si os orino crecéis? 
+    <<jump Mush2a>>
+-> Estoy en contra de la recolección de setas. Las probé y estáis malísimas.
+    <<jump Mush2b>>
+-> Reconozco que vuestro diseño natural es excelente y llamativo. 
+    <<jump Mush2c>>
+===
+
+title: Mush2a
+position: 430,557
+---
+Setas: (LAS SETAS MIRAN FIJAMENTE A NYX SIN EXPRESIÓN)
+===
+
+title: Mush2b
+position: 429,701
+---
+Setas: (LAS SETAS MIRAN FIJAMENTE A NYX SIN EXPRESIÓN)
+===
+
+title: Mush2c
+position: 430,843
+---
+Setas: (LAS SETAS MIRAN A NYX CON ALEGRÍA)
+
+<<set $peopleHelped += 1>>
+<<set $mushroomsHelped = true>>
+
+¡HAS QUEDADO BIEN CON LAS SETAS!
+=== 
+
+
+///Conversación default antes de la questLibrarian
+title: Bear1
+position: 687,557
+---
+<<declare $bearHelped = false as bool>>
+Nyx: Te puedo oler desde el otro lado del lago.
+Oso: Qué buen olfato tienes, Nyx.
+Nyx: Te huelen desde allí hasta los humanos. Dúchate guarro.
+Oso: Es increíble que sigas vivo, Nyx. Largo de mi vista.
+===
+
+///Conversación para questLibrarian
+title: Bear2
+position: 689,701
+---
+Nyx: Saludos, tío grande.
+-> Entre tú y yo. Lo de hibernar es para dejar de ver a la gente ¿no?
+    <<jump Bear2a>>
+-> Que envidia me da tu pelaje. Ojalá comprarme uno.
+    <<jump Bear2b>>
+-> Me alegra ver que nadie del pueblo se asusta de ti. 
+    <<jump Bear2c>>
+===
+
+title: Bear2a
+position: 981,557
+---
+Oso: Hibernamos para conservar energía y poder así lidiar con 
+Oso: personajes como tú durante las otras estaciones del año. 
+Nyx: Estúpida rata de 4 metros mal educada. Tengo sentimientos.
+Oso: Me cansas, Nyx. 
+===
+
+title: Bear2b
+position: 983,702
+---
+Oso: Espera...¿PERO TÚ ERES CONSCIENTES DE LO QUE DICES?
+Nyx: ¡SOLO DIGO QUE ME GUSTARÍA TENER TU PELAJE! No se puede hablar contigo.
+Oso: Me haces desear hibernar de nuevo, y solo estamos en primavera.
+===
+
+title: Bear2c
+position: 985,845
+---
+Oso: ¡Oh! Pues muchas gracias Nyx. A veces no pillo el rollo que llevas.
+Oso: Pero me alegro mucho que me reconozcas y me tengas en cuenta.
+
+<<set $peopleHelped += 1>>
+<<set $bearHelped = true>>
+
+¡HAS QUEDADO BIEN CON EL OSO!
+===
+
+
+///CONVERSACION MAGO Y HADA
+
+///Conversación default antes de la questLibrarian
+title: WizardAndFairy1
+---
+<<declare $wizardHelped = false as bool>>
+Nyx: Eh, mago Bumbledore.
+Bumbledore: ¿Qué quieres, Nyx?
+Nyx: Lanza un rayo al agua. A ver que pasa.
+Bumbledore: ¡¿PERO A TI QUE TE PASA POR LA CABEZA?! ¡Misty está en esa barca!
+Misty: ¿Qué ocurre?
+Bumbledore: Nada, no te preocupes.
+===
+
+///Conversación para questLibrarian
+title: WizardAndFairy2
+---
+Nyx: Veamos...
+-> ¿Sabes de algún hechizo gratis para arreglar chimeneas imperecederas?
+    <<jump Wiz2a>>
+-> ¿Te da miedo el agua? ¿A tu edad?
+    <<jump Wiz2b>>
+-> Misty y tú tenéis una gran amistad. Debéis estar orgullosos. 
+    <<jump Wiz2c>>
+===
+
+title: Wiz2a
+---
+Bumbledore: No pienso arreglarte la puñetera chimenea, Nyx. 
+Nyx: No te cuesta nada. Y a mí me cuesta la vida.
+Misty: Tampoco le cuesta nada hacer un hechizo de viento
+Misty: para que salgas volando y dejes de dar la brasa.
+Nyx: Cállate rata alada.
+Bumbledore: Largo de aquí. 
+===
+
+title: Wiz2b
+---
+Misty: A lo que sigue temiendo a su edad es a los imbéciles como tú. 
+Nyx: Me minas la moral.
+Bumbledore: Tú no tienes de eso. Ni chimenea.
+Nyx: Ahí has estado fino. Sorprende ver lucidez a esa edad.
+Bumbledore: Fuera.
+===
+
+title: Wiz2c
+---
+Bumbledore: ¡Vaya! Me avergüenza decir esto, pero...
+Bumbledore: Nunca me había parado a pensar en ello. 
+Misty: Porque siempre estás estudiando metido en tu torre.
+Bumbledore: ¡Cierto! Gracias Nyx, quizás tenga que salir más a menudo como hoy. 
+
+<<set $peopleHelped += 1>>
+<<set $wizardHelped = true>>
+
+¡HAS QUEDADO BIEN CON EL MAGO Y EL HADA!
+=== 
+
+
+///Conversación default antes de la questLibrarian
+title: Woodcutter1
+---
+<<declare $woodcutterHelped = false as bool>>
+Nyx: ¿Qué, intentando calentar a la bibliotecaria quedándote sin camisa?
+Leñador: ¡QUE TE HE DICHO MIL VECES QUE TENGO MARIDO, NYX!
+Leñador: ¡COMO VUELVAS A HACER ESA BROMA, TE ARRANCO LOS MECHONES!
+Nyx: No te sulfures, si yo solo venía a calentarme en la hoguera.
+===
+
+///Conversación para questLibrarian
+title: Woodcutter2
+---
+Nyx: Holi.
+-> Tengo una chimenea imperecedera. Van muy bien. Cómprate una.
+    <<jump Wood2a>>
+-> ¿Por qué te quitas la camisa?¿Demuestras a tus empleados que eres el alfa?
+    <<jump Wood2b>>
+-> Veo que tenéis trabajo, me alegro de que el negocio os vaya bien.
+    <<jump Wood2c>>
+===
+
+title: Wood2a
+---
+Leñador: Mira mequetrefe impertinente, si no fuera por esas chimeneas ahora 
+Leñador: podría estar ganándome mucho mejor la vida con la leña. Largo.
+===
+
+title: Wood2b
+---
+Leñador: ¡ME QUITO LA CAMISA PORQUE IMPIDE EL MOVIMIENTO DEL CORTE VERTICAL!
+Leñador: ¡¿ES QUE NO TIENES COSAS QUE HACER, NYX?!
+===
+
+title: Wood2c
+---
+Leñador: Bueno, las chimeneas imperecederas como la tuya nos han quitado
+Leñador: bastante clientela. Pero aún hay personas que prefieren tirar
+Leñador: un tronco al fuego y sentirse capaces de mantener el fuego.
+Nyx: O que no se han enterado aún que ya no hace falta hacerlo.
+Leñador: ¡¿QUÉ HAS DICHO?!
+Nyx: Nada.
+Leñador: Bueno, gracias Nyx por alegrarte por mi negocio. 
+
+<<set $peopleHelped += 1>>
+<<set $woodcutterHelped = true>>
+
+¡HAS QUEDADO BIEN CON EL LEÑADOR!
+=== 
+
+
+///CONVERSACION EMPLEADOS
+
+///Conversación default 
+title: Employee1
+---
+Empleado: ...
+===
+
+title: Employee2
+---
+Empleado: Habla con mi jefe. Está ahí cortando leña.
+===
+
+
+///CONVERSACION MONTARAZ Y HOMBRES LOBO
+
+///Conversación default antes de la questLibrarian
+title: ManWolves1
+---
+<<declare $manWolvesHelped = false as bool>>
+Nyx: Si hay algo peor que los perros, son las personas que le gustan los perros.
+Montaraz: Para empezar, no son perros, son hombres lobo.
+Nyx: ¡NO FASTIDIES!¡MITAD CHUCHO Y MITAD HUMANO! ¡JUAJAUAJAUA ES RIDÍCULO!
+Hombres lobo: ...Estámos aquí delante colega...
+===
+
+///Conversación para questLibrarian
+title: ManWolves2
+---
+Nyx: Esto me va a ser difícil
+-> Debe hacer ilusión ser amigo de hombres lobo. Ver a un chucho razonar es un logro.
+    <<jump ManWolves2a>>
+-> Llevo todo el año luchando para que hagan un pipicán. Merecéis una integración justa.
+    <<jump ManWolves2b>>
+-> No debe ser fácil ser como vosotros. Ojalá os sintáis a gusto y aceptados en este pueblo.
+    <<jump ManWolves2c>>
+===
+
+title: ManWolves2a
+---
+Montaraz: Estúpido gato metomentodo. ¡Muestra respeto!
+Hombres lobo: Déjalo, montaraz, estamos acostumbrados...
+===
+
+title: ManWolves2b
+---
+Hombre lobo: Colega. Yo puedo controlarme...
+Hombres lobo: Mi hijo no. 
+===
+
+title: ManWolves2c
+---
+Hombres lobo: Muchas gracias, muy amable. 
+Montaraz: Caray Nyx...si tienes corazón.
+Nyx: Y sentimientos.
+
+<<set $peopleHelped += 1>>
+<<set $manWolvesHelped = true>>
+
+¡HAS QUEDADO BIEN CON EL MONTARAZ Y LOS HOMBRES LOBO!
+===
+
+
+///CONVERSACION PERRO
+
+///Conversación default antes de la questLibrarian
+title: Dog1
+---
+<<declare $dogHelped = false as bool>>
+Nyx: Estúpida chucho-rata pulgosa y peluda. Eres la cosa más tonta que conozco,
+Nyx: Y mira que en este pueblo hay tontos.
+Perro: (¡PERRO QUIERE A NYX! ¡NYX ES MEJOR AMIGO! ¡NYX QUIERE A PERRO!)
+===
+
+///Conversación para questLibrarian
+title: Dog2
+---
+Nyx: ¡NI DE COÑA VOY A QUEDAR BIEN CONTIGO!
+Nyx: ¡PERRO SARNOSO ASQUEROSO! ¡DEJA DE MIRARME!
+Perro: (¡NYX ES EL MEJOR!¡SIEMPRE SALUDA A PERRO!¡NYX ES MEJOR AMIGO POR SIEMPRE!)
+
+<<set $peopleHelped += 1>>
+<<set $dogHelped = true>>
+
+¡HAS QUEDADO BIEN CON EL PERRO!
 ===

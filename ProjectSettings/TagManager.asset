@@ -9,6 +9,17 @@ TagManager:
   - Knight
   - Soldier
   - Librarian
+  - Couple
+  - Cleric
+  - Archer
+  - Elf
+  - Mushrooms
+  - Bear
+  - Wizard
+  - Woodcutter
+  - Employee
+  - ManWolves
+  - Dog
   layers:
   - Default
   - TransparentFX
