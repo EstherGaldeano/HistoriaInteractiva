@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: bd5246ebd348c6445a44db69461609a7
+guid: 176fda1538755aa48b3e33c5b4bd0572
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1113734775002315420
-    second: nyx_idle_0
+      213: 6592251703706146087
+    second: nyx_walkRight_0
   - first:
-      213: 5236586054326323646
-    second: nyx_idle_1
+      213: -3336467824099518761
+    second: nyx_walkRight_1
   - first:
-      213: 1327201272652351707
-    second: nyx_idle_2
+      213: -4819046966522171881
+    second: nyx_walkRight_2
   - first:
-      213: 258339165109460335
-    second: nyx_idle_3
+      213: 4320297762880566714
+    second: nyx_walkRight_3
   - first:
-      213: -3414586919480312761
-    second: nyx_idle_4
+      213: -5136830167741077817
+    second: nyx_walkRight_4
   - first:
-      213: 145425790272288281
-    second: nyx_idle_5
+      213: 1120496821217928863
+    second: nyx_walkRight_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nyx_idle 1_0
+      name: nyx_walkRight_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,16 +128,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d01c3a8b99f6e5049b52f4d6d78e8948
-      internalID: -163475384
+      spriteID: 7255e5d4ff16c7b50800000000000000
+      internalID: 6592251703706146087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nyx_idle 1_1
+      name: nyx_walkRight_1
       rect:
         serializedVersion: 2
         x: 32
@@ -150,16 +150,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1ac72e20ac8432541bdd7c0f861eb6c0
-      internalID: 683950570
+      spriteID: 7d6170cf03c72b1d0800000000000000
+      internalID: -3336467824099518761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nyx_idle 1_2
+      name: nyx_walkRight_2
       rect:
         serializedVersion: 2
         x: 0
@@ -172,16 +172,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 77ebc6c1976433041970d24642773c83
-      internalID: -1847087941
+      spriteID: 71ea58cf05e4f1db0800000000000000
+      internalID: -4819046966522171881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nyx_idle 1_3
+      name: nyx_walkRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -194,16 +194,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8fde49df39d61bc41a52d936d76e2154
-      internalID: 1501162411
+      spriteID: ab53968ece7c4fb30800000000000000
+      internalID: 4320297762880566714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nyx_idle 1_4
+      name: nyx_walkRight_4
       rect:
         serializedVersion: 2
         x: 0
@@ -216,16 +216,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 89bed9af3d43f1640988f3675c69337c
-      internalID: 814402870
+      spriteID: 7c66844bd2056b8b0800000000000000
+      internalID: -5136830167741077817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nyx_idle 1_5
+      name: nyx_walkRight_5
       rect:
         serializedVersion: 2
         x: 32
@@ -238,10 +238,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b1afc90b61af29f45afcf584930e8bf6
-      internalID: -1928615959
+      spriteID: f9626a81cedcc8f00800000000000000
+      internalID: 1120496821217928863
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3a9dbf94fefb8174abdf203b205512a7
+    spriteID: 1dd61fbf7fa7c0043918b85c5b346d0a
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nyx_idle 1_0: -163475384
-      nyx_idle 1_1: 683950570
-      nyx_idle 1_2: -1847087941
-      nyx_idle 1_3: 1501162411
-      nyx_idle 1_4: 814402870
-      nyx_idle 1_5: -1928615959
+      nyx_walkRight_0: 6592251703706146087
+      nyx_walkRight_1: -3336467824099518761
+      nyx_walkRight_2: -4819046966522171881
+      nyx_walkRight_3: 4320297762880566714
+      nyx_walkRight_4: -5136830167741077817
+      nyx_walkRight_5: 1120496821217928863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

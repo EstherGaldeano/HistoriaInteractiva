@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: bd5246ebd348c6445a44db69461609a7
+guid: 9cee5ac8747966d4ca1b3fc122458ad7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1113734775002315420
-    second: nyx_idle_0
+      213: 1997777229864985398
+    second: nyx_walkBack_0
   - first:
-      213: 5236586054326323646
-    second: nyx_idle_1
-  - first:
-      213: 1327201272652351707
-    second: nyx_idle_2
-  - first:
-      213: 258339165109460335
-    second: nyx_idle_3
-  - first:
-      213: -3414586919480312761
-    second: nyx_idle_4
-  - first:
-      213: 145425790272288281
-    second: nyx_idle_5
+      213: -7999597351732846710
+    second: nyx_walkBack_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,95 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nyx_idle 1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d01c3a8b99f6e5049b52f4d6d78e8948
-      internalID: -163475384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nyx_idle 1_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ac72e20ac8432541bdd7c0f861eb6c0
-      internalID: 683950570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nyx_idle 1_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77ebc6c1976433041970d24642773c83
-      internalID: -1847087941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nyx_idle 1_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fde49df39d61bc41a52d936d76e2154
-      internalID: 1501162411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nyx_idle 1_4
+      name: nyx_walkBack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -216,16 +116,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 89bed9af3d43f1640988f3675c69337c
-      internalID: 814402870
+      spriteID: 633677e4ec789bb10800000000000000
+      internalID: 1997777229864985398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nyx_idle 1_5
+      name: nyx_walkBack_1
       rect:
         serializedVersion: 2
         x: 32
@@ -238,10 +138,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b1afc90b61af29f45afcf584930e8bf6
-      internalID: -1928615959
+      spriteID: a8fdecf9798bbf090800000000000000
+      internalID: -7999597351732846710
       vertices: []
       indices: 
       edges: []
@@ -250,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3a9dbf94fefb8174abdf203b205512a7
+    spriteID: dc9076524057baf4b8a7e3866493413c
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nyx_idle 1_0: -163475384
-      nyx_idle 1_1: 683950570
-      nyx_idle 1_2: -1847087941
-      nyx_idle 1_3: 1501162411
-      nyx_idle 1_4: 814402870
-      nyx_idle 1_5: -1928615959
+      nyx_walkBack_0: 1997777229864985398
+      nyx_walkBack_1: -7999597351732846710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
