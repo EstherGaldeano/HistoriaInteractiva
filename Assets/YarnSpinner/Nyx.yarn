@@ -700,8 +700,9 @@ Nyx: Holi.
 title: Wood2a
 position: 432,1053
 ---
-Leñador: Mira mequetrefe impertinente, si no fuera por esas chimeneas ahora 
-Leñador: podría estar ganándome mucho mejor la vida con la leña. Largo.
+Leñador: Mira mequetrefe impertinente
+Leñador: Si no fuera por esas chimeneas ahora podría estar ganándome mucho mejor la vida con la leña. 
+Leñador: Largo.
 <<TriggerEndDialogue>>
 ===
 
@@ -716,9 +717,8 @@ Leñador: ¡¿ES QUE NO TIENES COSAS QUE HACER, NYX?!
 title: Wood2c
 position: 433,1334
 ---
-Leñador: Bueno, las chimeneas imperecederas como la tuya nos han quitado
-Leñador: bastante clientela. Pero aún hay personas que prefieren tirar
-Leñador: un tronco al fuego y sentirse capaces de mantener el fuego.
+Leñador: Bueno, las chimeneas imperecederas como la tuya nos han quitado bastante clientela.
+Leñador: Pero aún hay personas que prefieren tirar un tronco al fuego y sentirse capaces de mantener el fuego.
 Nyx: O que no se han enterado aún que ya no hace falta hacerlo.
 Leñador: ¡¿QUÉ HAS DICHO?!
 Nyx: Nada.
@@ -815,8 +815,7 @@ title: Dog1
 position: -430,1446
 ---
 <<declare $dogHelped = false as bool>>
-Nyx: Estúpida chucho-rata pulgosa y peluda. Eres la cosa más tonta que conozco,
-Nyx: Y mira que en este pueblo hay tontos.
+Nyx: Estúpida chucho-rata pulgosa y peluda. Eres la cosa más tonta que conozco y mira que en este pueblo hay tontos.
 Perro: (¡PERRO QUIERE A NYX! ¡NYX ES MEJOR AMIGO! ¡NYX QUIERE A PERRO!)
 <<TriggerEndDialogue>>
 ===
