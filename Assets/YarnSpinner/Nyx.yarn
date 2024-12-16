@@ -35,10 +35,8 @@ title: Dragon1c
 position: -154,-447
 ---
 Dragón: Pues no te voy a decir que no.
-Dragón: Mira, detrás de mi granja hay un campamento donde acampa un caballero.
-Dragón: Un flipado. El tío es un friki de las batallitas.
-Dragón: No hace daño a nadie, pero es muy pesao. 
-Dragón: Y no quiero que me pegue la turra otra vez en la taberna.
+Dragón: Mira, detrás de mi granja hay un campamento donde acampa un caballero, un flipado. El tío es un friki de las batallitas.
+Dragón: No hace daño a nadie, pero es muy pesao y no quiero que me pegue la turra otra vez en la taberna.
 Dragón: Convéncelo de que se pire, y el objeto será tuyo.
 Nyx: (DEBERÍA IR A HABLAR CON EL CABALLERO)
 <<set $phaseDragon = 3>>
@@ -99,8 +97,7 @@ position: 421,-719
 Caballero: Me han llamado cosas peores. He vivido cosas peores.
 Caballero: Ojalá encontrar algo en esta vida que me ilusione o sorprenda.
 Caballero: Déjame solo con mis historias. A no ser que quieras saber una.
-Caballero: Batallé en el norte hace 15 años, en un reino que no conoces.
-Caballero: Y...
+Caballero: Batallé en el norte hace 15 años, en un reino que no conoces y...
 Nyx: Que te pires.
 Caballero: No.
 <<TriggerEndDialogue>>
@@ -109,10 +106,9 @@ Caballero: No.
 title: Knight2b
 position: 422,-582
 ---
-Caballero: ¿A esto hemos llegado? ¿Quiénes somos para decidir quien
-Caballero: puede habitar la tierra? Una vez me contaron que un rey,
-Caballero: el cual pedía tributos muy altos al pueblo y pedía dinero
-Caballero: hasta las ratas, se encontró con una rebelión del pueblo...
+Caballero: ¿A esto hemos llegado? ¿Quiénes somos para decidir quien puede habitar la tierra?
+Caballero: Una vez me contaron que un rey, el cual pedía tributos muy altos al pueblo y pedía dinero hasta las ratas,
+Caballero: un día se encontró con una rebelión del pueblo...
 Nyx: Hablando de ratas, vete.
 Caballero: No.
 <<TriggerEndDialogue>>
@@ -121,8 +117,7 @@ Caballero: No.
 title: Knight2c
 position: 421,-445
 ---
-Caballero: Me gustas. Como todo caballero valiente, te pondré una prueba, una que va
-Caballero: más allá de lo imaginable, una qué...
+Caballero: Me gustas. Como todo caballero valiente, te pondré una prueba, una que va más allá de lo imaginable, una qué...
 Nyx: Bueno vale ya, que quieres.
 Caballero: Ofreceme una historia que sorprende a un hombre con muchas historias.
 Nyx: No te soporto, pero voy a hablar con la bibliotecaria y vuelvo.
