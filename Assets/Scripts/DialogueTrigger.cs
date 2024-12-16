@@ -12,6 +12,11 @@ public class DialogueTrigger : MonoBehaviour
 
     void Start()
     {
+        if(this.gameObject.tag == "Book")
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 
     void Update()
@@ -32,6 +37,8 @@ public class DialogueTrigger : MonoBehaviour
         inMemoryVariableStorage.TryGetValue("$manWolvesHelped", out bool helpedManWolves);
         inMemoryVariableStorage.TryGetValue("$dogHelped", out bool helpedDog);
 
+        inMemoryVariableStorage.TryGetValue("$bookAppears", out bool bookAppears);
+
         dragonPhase = Mathf.FloorToInt(phaseDragon);
         knightPhase = Mathf.FloorToInt(phaseKnight);
         libPhase = Mathf.FloorToInt(phaseLib);
@@ -47,6 +54,17 @@ public class DialogueTrigger : MonoBehaviour
         woodcutterHelped = helpedWoodcutter;
         manWolvesHelped = helpedManWolves;
         dogHelped = helpedDog;
+
+        bookVisible = bookAppears;
+
+        if (bookVisible)
+        {
+            if(this.gameObject.tag == "Book")
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            }
+        }
 
         if (peopleHelpedNumber >= 3)
         {
@@ -388,6 +406,12 @@ public class DialogueTrigger : MonoBehaviour
         {
             is_in_talk_area = true;
         }
+        if(this.gameObject.tag == "Book")
+        {
+            inMemoryVariableStorage.SetValue("$phaseKnight", 4f);
+
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other) 
@@ -422,6 +446,8 @@ public class DialogueTrigger : MonoBehaviour
     public static bool employeeHelped = false;
     public static bool manWolvesHelped = false;
     public static bool dogHelped = false;
+
+    public static bool bookVisible = false;
 }
 
 

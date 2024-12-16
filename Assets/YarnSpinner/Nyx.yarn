@@ -124,14 +124,13 @@ Nyx: No te soporto, pero voy a hablar con la bibliotecaria y vuelvo.
 title: Knight3
 position: 146,-444
 ---
-Caballero: Ofreceme una historia que sorprende a un hombre con muchas historias.
+Caballero: Ofréceme una historia que sorprenda a un hombre con muchas historias.
 ===
 
 title: Knight4
 position: 146,-308
 ---
 Nyx: Te traigo esta historia. Por las turras que pegas, raro es que hayas leido algo así.
-NYX LE DA LIBRO ROMÁNTICO A CABALLERO
 Caballero: Dame eso, más te vale que sea un buen...
 Caballero: Dioses, esto es...
 Caballero: ¡¿Una novela romántica para un hombre como yo!?
@@ -141,7 +140,7 @@ Caballero: y Meredith. Espera... Dioses, cuanto drama... ¿QUÉ ES ESTO QUE ESTO
 Nyx: ¡NO LO SÉ!¡PERO PIRATE!
 Caballero: Tienes razón. Te dije que me iría y me iré. Te doy mi palabra. Pero ahora
 Caballero: déjame a solas con esta historia...
-(HABLA DE NUEVO CON EL DRAGÓN)
+Nyx: (DEBERÍA VOLVER DE NUEVO CON EL DRAGÓN)
 <<set $phaseKnight = 5>>
 <<set $phaseDragon = 4>>
 ===
@@ -149,8 +148,8 @@ Caballero: déjame a solas con esta historia...
 title: Knight5
 position: 146,-176
 ---
-Caballero: déjame a solas con esta historia...
-(HABLA DE NUEVO CON EL DRAGÓN)
+Caballero: Déjame a solas con esta historia...
+Nyx: (DEBERÍA VOLVER DE NUEVO CON EL DRAGÓN)
 ===
 
 ///CONVERSACION SOLDADOS CAMPAMENTO
@@ -166,7 +165,7 @@ position: 145,-896
 ---
 Soldado: Habla con mi jefe, yo no soy caballero.
 
-(NO ES EL CABALLERO)
+Nyx: (ESTA RATA NO ES EL CABALLERO)
 ===
 
 
@@ -220,7 +219,7 @@ Bibliotecaria: Habla con al menos tres personajes y que queden contentos.
 Bibliotecaria: Si lo haces, te daré el libro que necesitas.
 Nyx:...
 <<set $phaseLib = 3>>
-RELACIÓNATE CON OTROS ALDEANOS Y QUEDA BIEN CON ELLOS
+Nyx: (DEBERÍA RELACIONARME CON OTROS ALDEANOS Y QUEDAR BIEN)
 <<declare $peopleHelped = 0 as number>>
 ===
 
@@ -240,14 +239,14 @@ Bibliotecaria: Vaya, al final Nyx tiene un corazón y hace cosas por los demás.
 Nyx: Rat....
 Bibliotecaria: ¿Qué?
 Nyx: Nada.
-Bibliotecaria: Está bien... Toma, por tu esfuerzo.
-(NYX RECIBE UNA NOVELA ROMÁNTICA)
-Nyx: ¿¡En serio!? ¿Pero tú crees que al motivado este le va a gustar esta purria?
+Bibliotecaria: Está bien... Coge ese libro, por tu esfuerzo.
+<<declare $bookAppears = false as bool>>
+<<set $bookAppears = true>>
+Nyx: ¿¡En serio!? ¿Pero tú crees que al motivado este le va a gustar esa purria?
 Bibliotecaria: Hazme caso Nyx...
 Nyx: Al final muero de frío.
 <<set $phaseLib = 5>>
-<<set $phaseKnight = 4>>
-(HABLA DE NUEVO CON EL CABALLERO)
+Nyx: (DEBERÍA LLEVARLE EL LIBRO AL CABALLERO)
 ===
 
 title: Librarian5
@@ -255,7 +254,7 @@ tags:
 position: 697,-165
 ---
 Bibliotecaria: Hazme caso Nyx...
-(HABLA DE NUEVO CON EL CABALLERO)
+Nyx: (DEBERÍA VOLVER DE NUEVO CON EL CABALLERO)
 ===
 
 
@@ -304,7 +303,7 @@ Pareja: Cuídate Nyx.
 <<set $peopleHelped += 1>>
 <<set $coupleHelped = true>>
 
-¿VES QUÉ FÁCIL? HAS QUEDADO BIEN CON LA PAREJA
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LA PAREJA)
 ===
 
 
@@ -355,7 +354,7 @@ Nyx: ...Me alegro de verte. Adiós.
 <<set $peopleHelped += 1>>
 <<set $clericHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL CLÉRIGO!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL CLÉRIGO)
 ===  
 
 
@@ -403,7 +402,7 @@ Arquero: ¡Pero gracias Nyx! ¡Me alegra saber que te preocupas por las personas
 <<set $peopleHelped += 1>>
 <<set $archerHelped = true>>
 
-HAS QUEDADO BIEN CON EL ARQUERO
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LA ARQUERO)
 ===
 
 
@@ -460,7 +459,7 @@ Nyx: Por favor, no menciones mi nombre en la canción. Los mortales apreciamos t
 <<set $peopleHelped += 1>>
 <<set $elfHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL ELFO!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL ELFO)
 === 
 
 
@@ -508,7 +507,7 @@ Setas: (LAS SETAS MIRAN A NYX CON ALEGRÍA)
 <<set $peopleHelped += 1>>
 <<set $mushroomsHelped = true>>
 
-¡HAS QUEDADO BIEN CON LAS SETAS!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LAS SETAS)
 === 
 
 
@@ -562,7 +561,7 @@ Oso: Pero me alegro mucho que me reconozcas y me tengas en cuenta.
 <<set $peopleHelped += 1>>
 <<set $bearHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL OSO!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL OSO)
 ===
 
 
@@ -570,6 +569,7 @@ Oso: Pero me alegro mucho que me reconozcas y me tengas en cuenta.
 
 ///Conversación default antes de la questLibrarian
 title: WizardAndFairy1
+position: 684,1054
 ---
 <<declare $wizardHelped = false as bool>>
 Nyx: Eh, mago Bumbledore.
@@ -582,6 +582,7 @@ Bumbledore: Nada, no te preocupes.
 
 ///Conversación para questLibrarian
 title: WizardAndFairy2
+position: 685,1194
 ---
 Nyx: Veamos...
 -> ¿Sabes de algún hechizo gratis para arreglar chimeneas imperecederas?
@@ -593,6 +594,7 @@ Nyx: Veamos...
 ===
 
 title: Wiz2a
+position: 987,1051
 ---
 Bumbledore: No pienso arreglarte la puñetera chimenea, Nyx. 
 Nyx: No te cuesta nada. Y a mí me cuesta la vida.
@@ -603,6 +605,7 @@ Bumbledore: Largo de aquí.
 ===
 
 title: Wiz2b
+position: 991,1188
 ---
 Misty: A lo que sigue temiendo a su edad es a los imbéciles como tú. 
 Nyx: Me minas la moral.
@@ -612,6 +615,7 @@ Bumbledore: Fuera.
 ===
 
 title: Wiz2c
+position: 995,1328
 ---
 Bumbledore: ¡Vaya! Me avergüenza decir esto, pero...
 Bumbledore: Nunca me había parado a pensar en ello. 
@@ -621,12 +625,13 @@ Bumbledore: ¡Cierto! Gracias Nyx, quizás tenga que salir más a menudo como ho
 <<set $peopleHelped += 1>>
 <<set $wizardHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL MAGO Y EL HADA!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON ESTOS DOS)
 === 
 
 
 ///Conversación default antes de la questLibrarian
 title: Woodcutter1
+position: 142,1050
 ---
 <<declare $woodcutterHelped = false as bool>>
 Nyx: ¿Qué, intentando calentar a la bibliotecaria quedándote sin camisa?
@@ -637,6 +642,7 @@ Nyx: No te sulfures, si yo solo venía a calentarme en la hoguera.
 
 ///Conversación para questLibrarian
 title: Woodcutter2
+position: 144,1193
 ---
 Nyx: Holi.
 -> Tengo una chimenea imperecedera. Van muy bien. Cómprate una.
@@ -648,18 +654,21 @@ Nyx: Holi.
 ===
 
 title: Wood2a
+position: 432,1053
 ---
 Leñador: Mira mequetrefe impertinente, si no fuera por esas chimeneas ahora 
 Leñador: podría estar ganándome mucho mejor la vida con la leña. Largo.
 ===
 
 title: Wood2b
+position: 434,1193
 ---
 Leñador: ¡ME QUITO LA CAMISA PORQUE IMPIDE EL MOVIMIENTO DEL CORTE VERTICAL!
 Leñador: ¡¿ES QUE NO TIENES COSAS QUE HACER, NYX?!
 ===
 
 title: Wood2c
+position: 433,1334
 ---
 Leñador: Bueno, las chimeneas imperecederas como la tuya nos han quitado
 Leñador: bastante clientela. Pero aún hay personas que prefieren tirar
@@ -672,7 +681,7 @@ Leñador: Bueno, gracias Nyx por alegrarte por mi negocio.
 <<set $peopleHelped += 1>>
 <<set $woodcutterHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL LEÑADOR!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL LEÑADOR)
 === 
 
 
@@ -680,11 +689,13 @@ Leñador: Bueno, gracias Nyx por alegrarte por mi negocio.
 
 ///Conversación default 
 title: Employee1
+position: 149,1385
 ---
 Empleado: ...
 ===
 
 title: Employee2
+position: 151,1533
 ---
 Empleado: Habla con mi jefe. Está ahí cortando leña.
 ===
@@ -694,6 +705,7 @@ Empleado: Habla con mi jefe. Está ahí cortando leña.
 
 ///Conversación default antes de la questLibrarian
 title: ManWolves1
+position: -420,1049
 ---
 <<declare $manWolvesHelped = false as bool>>
 Nyx: Si hay algo peor que los perros, son las personas que le gustan los perros.
@@ -704,6 +716,7 @@ Hombres lobo: ...Estámos aquí delante colega...
 
 ///Conversación para questLibrarian
 title: ManWolves2
+position: -420,1192
 ---
 Nyx: Esto me va a ser difícil
 -> Debe hacer ilusión ser amigo de hombres lobo. Ver a un chucho razonar es un logro.
@@ -715,18 +728,21 @@ Nyx: Esto me va a ser difícil
 ===
 
 title: ManWolves2a
+position: -152,1049
 ---
 Montaraz: Estúpido gato metomentodo. ¡Muestra respeto!
 Hombres lobo: Déjalo, montaraz, estamos acostumbrados...
 ===
 
 title: ManWolves2b
+position: -151,1192
 ---
 Hombre lobo: Colega. Yo puedo controlarme...
 Hombres lobo: Mi hijo no. 
 ===
 
 title: ManWolves2c
+position: -149,1336
 ---
 Hombres lobo: Muchas gracias, muy amable. 
 Montaraz: Caray Nyx...si tienes corazón.
@@ -735,7 +751,7 @@ Nyx: Y sentimientos.
 <<set $peopleHelped += 1>>
 <<set $manWolvesHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL MONTARAZ Y LOS HOMBRES LOBO!
+Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LOS RARETES)
 ===
 
 
@@ -743,6 +759,7 @@ Nyx: Y sentimientos.
 
 ///Conversación default antes de la questLibrarian
 title: Dog1
+position: -430,1446
 ---
 <<declare $dogHelped = false as bool>>
 Nyx: Estúpida chucho-rata pulgosa y peluda. Eres la cosa más tonta que conozco,
@@ -752,6 +769,7 @@ Perro: (¡PERRO QUIERE A NYX! ¡NYX ES MEJOR AMIGO! ¡NYX QUIERE A PERRO!)
 
 ///Conversación para questLibrarian
 title: Dog2
+position: -426,1593
 ---
 Nyx: ¡NI DE COÑA VOY A QUEDAR BIEN CONTIGO!
 Nyx: ¡PERRO SARNOSO ASQUEROSO! ¡DEJA DE MIRARME!
@@ -760,5 +778,12 @@ Perro: (¡NYX ES EL MEJOR!¡SIEMPRE SALUDA A PERRO!¡NYX ES MEJOR AMIGO POR SIEM
 <<set $peopleHelped += 1>>
 <<set $dogHelped = true>>
 
-¡HAS QUEDADO BIEN CON EL PERRO!
+Nix: (ES TAN TONTO QUE HE QUEDADO BIEN CON ÉL SIN QUERER)
+===
+title: Nyx
+position: -415,-1021
+---
+Nyx: ¡PARDIEZ! No tengo fuego...
+Nyx: Tendré que ir a hablar con esa rata en forma de dragón, vaya palo...
+Nyx: Estará en su casa al sur del pueblo.
 ===
