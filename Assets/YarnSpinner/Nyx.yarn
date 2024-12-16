@@ -43,6 +43,7 @@ Dragón: Convéncelo de que se pire, y el objeto será tuyo.
 Nyx: (DEBERÍA IR A HABLAR CON EL CABALLERO)
 <<set $phaseDragon = 3>>
 <<set $phaseKnight = 2>>
+<<TriggerEndDialogue>>
 ===
 
 title: Dragon3
