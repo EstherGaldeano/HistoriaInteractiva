@@ -59,8 +59,8 @@ position: -418,-312
 ---
 Nyx: Ya está. El motivado dice que se va.
 Dragón: Lo prometido es deuda. Aquí tienes el mechero.
-<<set $phaseDragon = 5>>
 <<TriggerEndDialogue>>
+<<set $phaseDragon = 5>>
 ===
 
 
