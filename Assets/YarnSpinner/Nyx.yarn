@@ -143,11 +143,10 @@ Caballero: Dame eso, más te vale que sea un buen...
 Caballero: Dioses, esto es...
 Caballero: ¡¿Una novela romántica para un hombre como yo!?
 Caballero: Espera... un momento. Sí, oh sí. Narrativa excelente. Premisa no explorada.
-Caballero: Me interesa mucho que va a ocurrir con la relación de Pamela
-Caballero: y Meredith. Espera... Dioses, cuanto drama... ¿QUÉ ES ESTO QUE ESTOY SINTIENDO?
+Caballero: Me interesa mucho que va a ocurrir con la relación de Pamela y Meredith.
+Caballero: Espera... Dioses, cuanto drama... ¿QUÉ ES ESTO QUE ESTOY SINTIENDO?
 Nyx: ¡NO LO SÉ!¡PERO PIRATE!
-Caballero: Tienes razón. Te dije que me iría y me iré. Te doy mi palabra. Pero ahora
-Caballero: déjame a solas con esta historia...
+Caballero: Tienes razón. Te dije que me iría y me iré. Te doy mi palabra. Pero ahora déjame a solas con esta historia...
 Nyx: (DEBERÍA VOLVER DE NUEVO CON EL DRAGÓN)
 <<set $phaseKnight = 5>>
 <<set $phaseDragon = 4>>
@@ -484,8 +483,7 @@ title: Elf2c
 position: -155,845
 ---
 Elfo: Vaya...No esperaba una pregunta tan profunda por tu parte...
-Elfo: Por supuesto que sigo teniendo inquietudes. Pero intento dejarme llevar
-Elfo: como esta flor se deja mecer por el viento. 
+Elfo: Por supuesto que sigo teniendo inquietudes. Pero intento dejarme llevar como esta flor se deja mecer por el viento. 
 Nyx:...
 Elfo: Creo que voy a escribir una canción sobre ello. Gracias, Nyx.
 Nyx: Por favor, no menciones mi nombre en la canción. Los mortales apreciamos tener dignidad.
@@ -578,8 +576,7 @@ Nyx: Saludos, tío grande.
 title: Bear2a
 position: 981,557
 ---
-Oso: Hibernamos para conservar energía y poder así lidiar con 
-Oso: personajes como tú durante las otras estaciones del año. 
+Oso: Hibernamos para conservar energía y poder así lidiar con personajes como tú durante las otras estaciones del año.
 Nyx: Estúpida rata de 4 metros mal educada. Tengo sentimientos.
 Oso: Me cansas, Nyx. 
 <<TriggerEndDialogue>>
@@ -642,8 +639,7 @@ position: 987,1051
 ---
 Bumbledore: No pienso arreglarte la puñetera chimenea, Nyx. 
 Nyx: No te cuesta nada. Y a mí me cuesta la vida.
-Misty: Tampoco le cuesta nada hacer un hechizo de viento
-Misty: para que salgas volando y dejes de dar la brasa.
+Misty: Tampoco le cuesta nada hacer un hechizo de viento para que salgas volando y dejes de dar la brasa.
 Nyx: Cállate rata alada.
 Bumbledore: Largo de aquí. 
 <<TriggerEndDialogue>>
