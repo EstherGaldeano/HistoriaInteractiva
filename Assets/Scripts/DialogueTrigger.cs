@@ -101,7 +101,10 @@ public class DialogueTrigger : MonoBehaviour
 
         if (dragonPhase == 5)
         {
-            timerScript.Victory();
+            if(this.gameObject.tag == "Dragon")
+            {
+                timerScript.Victory();
+            }
         }
 
         if (peopleHelpedNumber >= 3 && libPhase == 3)

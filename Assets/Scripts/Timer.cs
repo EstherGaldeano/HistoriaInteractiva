@@ -63,7 +63,7 @@ public class Timer : MonoBehaviour
         if(gameoverPanel != null)
         {
             gameoverPanel.SetActive(true);
-            player.GetComponent<PlayerMovement>().OnDialogueStart();
+            player.GetComponent<PlayerMovement>().isTalking = true;
             Invoke("ToMainMenu", 3.0f);
         }
     }
@@ -74,7 +74,7 @@ public class Timer : MonoBehaviour
         {
             timeStopped = true;
             victoryPanel.SetActive(true);
-            player.GetComponent<PlayerMovement>().OnDialogueStart();
+            player.GetComponent<PlayerMovement>().isTalking = true;
             Invoke("ToMainMenu", 5.0f);
         }
     }
