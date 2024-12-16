@@ -1,7 +1,9 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using Yarn;
 using Yarn.Unity;
+using TMPro;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -11,6 +13,14 @@ public class DialogueTrigger : MonoBehaviour
     public InMemoryVariableStorage inMemoryVariableStorage;
 
     public Timer timerScript;
+    public PlayerMovement playerMovementScript;
+
+    public Button continueButton;
+
+    public TMP_Text happyPeopleText;
+
+    public GameObject playerImg;
+    public GameObject NPCImg;
 
     void Start()
     {
@@ -19,6 +29,11 @@ public class DialogueTrigger : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
+
+        happyPeopleText.enabled = false;
+
+        playerImg.SetActive(false);
+        NPCImg.SetActive(false);
     }
 
     void Update()
@@ -59,6 +74,13 @@ public class DialogueTrigger : MonoBehaviour
 
         bookVisible = bookAppears;
 
+        happyPeopleText.text = "Gente contenta: " + peopleHelpedNumber.ToString() + "/3";
+
+        if (Input.GetKeyDown(KeyCode.Space) && continueButton != null && continueButton.gameObject.activeSelf)
+        {
+            continueButton.onClick.Invoke();
+        }
+
         if (bookVisible)
         {
             if(this.gameObject.tag == "Book")
@@ -68,15 +90,29 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
 
-        if(dragonPhase == 5)
+        if(libPhase == 3 || libPhase == 4)
+        {
+            happyPeopleText.enabled = true;
+        }
+        else
+        {
+            happyPeopleText.enabled = false;
+        }
+
+        if (dragonPhase == 5)
         {
             timerScript.Victory();
         }
 
-        if (peopleHelpedNumber >= 3)
+        if (peopleHelpedNumber >= 3 && libPhase == 3)
         {
             inMemoryVariableStorage.SetValue("$phaseLib", 4f);
-            inMemoryVariableStorage.SetValue("$peopleHelped", 0f);
+        }
+
+        if(peopleHelpedNumber == 3 && !returnToLib && !playerMovementScript.isTalking)
+        {
+            dialogueRunner.StartDialogue("Nyx2");
+            returnToLib = true;
         }
 
         if (is_in_talk_area & Input.GetKeyDown(KeyCode.E))
@@ -85,11 +121,15 @@ public class DialogueTrigger : MonoBehaviour
             {
                 case "Dragon":
 
+                    NPCImg.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
                     dialogueRunner.StartDialogue(this.gameObject.tag + dragonPhase);
 
                     break;
 
                 case "Knight":
+
+                    NPCImg.gameObject.transform.GetChild(1).gameObject.SetActive(true);
 
                     dialogueRunner.StartDialogue(this.gameObject.tag + knightPhase);
 
@@ -97,13 +137,17 @@ public class DialogueTrigger : MonoBehaviour
 
                 case "Librarian":
 
+                    NPCImg.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+
                     dialogueRunner.StartDialogue(this.gameObject.tag + libPhase);
 
                     break;
 
                 case "Soldier":
 
-                    if(dragonPhase < 3)
+                    NPCImg.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+
+                    if (dragonPhase < 3)
                     {
                         dialogueRunner.StartDialogue("Soldier1");
                     }
@@ -115,6 +159,8 @@ public class DialogueTrigger : MonoBehaviour
                     break;
 
                 case "Couple":
+
+                    NPCImg.gameObject.transform.GetChild(4).gameObject.SetActive(true);
 
                     if (libPhase < 3 || coupleHelped)
                     {
@@ -129,6 +175,8 @@ public class DialogueTrigger : MonoBehaviour
 
                 case "Cleric":
 
+                    NPCImg.gameObject.transform.GetChild(5).gameObject.SetActive(true);
+
                     if (libPhase < 3 || clericHelped)
                     {
                         dialogueRunner.StartDialogue("Cleric1");
@@ -141,6 +189,8 @@ public class DialogueTrigger : MonoBehaviour
                     break;
 
                 case "Archer":
+
+                    NPCImg.gameObject.transform.GetChild(6).gameObject.SetActive(true);
 
                     if (libPhase < 3 || archerHelped)
                     {
@@ -155,6 +205,8 @@ public class DialogueTrigger : MonoBehaviour
 
                 case "Elf":
 
+                    NPCImg.gameObject.transform.GetChild(7).gameObject.SetActive(true);
+
                     if (libPhase < 3 || elfHelped)
                     {
                         dialogueRunner.StartDialogue("Elf1");
@@ -167,6 +219,8 @@ public class DialogueTrigger : MonoBehaviour
                     break;
 
                 case "Mushrooms":
+
+                    NPCImg.gameObject.transform.GetChild(8).gameObject.SetActive(true);
 
                     if (libPhase < 3 || mushroomsHelped)
                     {
@@ -181,6 +235,8 @@ public class DialogueTrigger : MonoBehaviour
 
                 case "Bear":
 
+                    NPCImg.gameObject.transform.GetChild(9).gameObject.SetActive(true);
+
                     if (libPhase < 3 || bearHelped)
                     {
                         dialogueRunner.StartDialogue("Bear1");
@@ -193,6 +249,8 @@ public class DialogueTrigger : MonoBehaviour
                     break;
 
                 case "Wizard":
+
+                    NPCImg.gameObject.transform.GetChild(10).gameObject.SetActive(true);
 
                     if (libPhase < 3 || wizardHelped)
                     {
@@ -207,6 +265,8 @@ public class DialogueTrigger : MonoBehaviour
 
                 case "Woodcutter":
 
+                    NPCImg.gameObject.transform.GetChild(11).gameObject.SetActive(true);
+
                     if (libPhase < 3 || woodcutterHelped)
                     {
                         dialogueRunner.StartDialogue("Woodcutter1");
@@ -219,6 +279,8 @@ public class DialogueTrigger : MonoBehaviour
                     break;
 
                 case "Employee":
+
+                    NPCImg.gameObject.transform.GetChild(12).gameObject.SetActive(true);
 
                     if (libPhase < 3 || woodcutterHelped)
                     {
@@ -233,6 +295,8 @@ public class DialogueTrigger : MonoBehaviour
 
                 case "ManWolves":
 
+                    NPCImg.gameObject.transform.GetChild(13).gameObject.SetActive(true);
+
                     if (libPhase < 3 || manWolvesHelped)
                     {
                         dialogueRunner.StartDialogue("ManWolves1");
@@ -245,6 +309,8 @@ public class DialogueTrigger : MonoBehaviour
                     break;
 
                 case "Dog":
+
+                    NPCImg.gameObject.transform.GetChild(14).gameObject.SetActive(true);
 
                     if (libPhase < 3 || dogHelped)
                     {
@@ -427,7 +493,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             is_in_talk_area = false;
         }
-    }
+    }    
 
     //Variables estaticas para que no cambien cada vez que habla con un npc
     //public static bool defaultLibrarian = true; //Conversacion por defecto de la bibliotecaria antes de pasar por el caballero
@@ -455,6 +521,7 @@ public class DialogueTrigger : MonoBehaviour
     public static bool dogHelped = false;
 
     public static bool bookVisible = false;
+    public static bool returnToLib = false;
 }
 
 

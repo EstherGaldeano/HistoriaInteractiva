@@ -21,12 +21,14 @@ title: Dragon1a
 position: -153,-720
 ---
 Dragón: No.
+<<TriggerEndDialogue>>
 ===
 
 title: Dragon1b
 position: -153,-584
 ---
 Dragón: No. Lárgate Nyx. 
+<<TriggerEndDialogue>>
 ===
 
 title: Dragon1c
@@ -38,6 +40,7 @@ Dragón: Un flipado. El tío es un friki de las batallitas.
 Dragón: No hace daño a nadie, pero es muy pesao. 
 Dragón: Y no quiero que me pegue la turra otra vez en la taberna.
 Dragón: Convéncelo de que se pire, y el objeto será tuyo.
+Nyx: (DEBERÍA IR A HABLAR CON EL CABALLERO)
 <<set $phaseDragon = 3>>
 <<set $phaseKnight = 2>>
 ===
@@ -46,6 +49,8 @@ title: Dragon3
 position: -418,-447
 ---
 Dragón: Convéncelo de que se pire, y el objeto será tuyo.
+Nyx: (DEBERÍA IR A HABLAR CON EL CABALLERO)
+<<TriggerEndDialogue>>
 ===
 
 title: Dragon4
@@ -54,6 +59,7 @@ position: -418,-312
 Nyx: Ya está. El motivado dice que se va.
 Dragón: Lo prometido es deuda. Aquí tienes el mechero.
 <<set $phaseDragon = 5>>
+<<TriggerEndDialogue>>
 ===
 
 
@@ -66,6 +72,7 @@ position: 145,-721
 
 Caballero: ¿Has visto que hoguera más guapa nos hemos montado?
 Nyx: Encima cachondeo.
+<<TriggerEndDialogue>>
 ===
 
 title: Knight2
@@ -83,7 +90,6 @@ Nyx: No, si al final muero por congelación.
     <<jump Knight2b>>
 -> Nyx: ¿Qué puedo hacer para que te marches?
     <<jump Knight2c>>
-
 ===
 
 title: Knight2a
@@ -96,6 +102,7 @@ Caballero: Batallé en el norte hace 15 años, en un reino que no conoces.
 Caballero: Y...
 Nyx: Que te pires.
 Caballero: No.
+<<TriggerEndDialogue>>
 ===
 
 title: Knight2b
@@ -107,6 +114,7 @@ Caballero: el cual pedía tributos muy altos al pueblo y pedía dinero
 Caballero: hasta las ratas, se encontró con una rebelión del pueblo...
 Nyx: Hablando de ratas, vete.
 Caballero: No.
+<<TriggerEndDialogue>>
 ===
 
 title: Knight2c
@@ -117,14 +125,18 @@ Caballero: más allá de lo imaginable, una qué...
 Nyx: Bueno vale ya, que quieres.
 Caballero: Ofreceme una historia que sorprende a un hombre con muchas historias.
 Nyx: No te soporto, pero voy a hablar con la bibliotecaria y vuelvo.
+Nyx: (DEBERÍA IR A HABLAR CON LA BIBLIOTECARIA)
 <<set $phaseKnight = 3>>
 <<set $phaseLib = 2>>
+<<TriggerEndDialogue>>
 ===
 
 title: Knight3
 position: 146,-444
 ---
 Caballero: Ofréceme una historia que sorprenda a un hombre con muchas historias.
+Nyx: (DEBERÍA IR A HABLAR CON LA BIBLIOTECARIA)
+<<TriggerEndDialogue>>
 ===
 
 title: Knight4
@@ -143,6 +155,7 @@ Caballero: déjame a solas con esta historia...
 Nyx: (DEBERÍA VOLVER DE NUEVO CON EL DRAGÓN)
 <<set $phaseKnight = 5>>
 <<set $phaseDragon = 4>>
+<<TriggerEndDialogue>>
 ===
 
 title: Knight5
@@ -150,6 +163,7 @@ position: 146,-176
 ---
 Caballero: Déjame a solas con esta historia...
 Nyx: (DEBERÍA VOLVER DE NUEVO CON EL DRAGÓN)
+<<TriggerEndDialogue>>
 ===
 
 ///CONVERSACION SOLDADOS CAMPAMENTO
@@ -158,6 +172,7 @@ title: Soldier1
 position: 145,-1034
 ---
 Soldado: ...
+<<TriggerEndDialogue>>
 ===
 
 title: Soldier2
@@ -166,6 +181,7 @@ position: 145,-896
 Soldado: Habla con mi jefe, yo no soy caballero.
 
 Nyx: (ESTA RATA NO ES EL CABALLERO)
+<<TriggerEndDialogue>>
 ===
 
 
@@ -179,6 +195,7 @@ position: 695,-719
 
 Nyx: ¿Como está la rata de biblioteca hoy?
 Bibliotecaria: Pírate Nyx.
+<<TriggerEndDialogue>>
 ===
 
 title: Librarian2
@@ -201,12 +218,14 @@ position: 985,-726
 ---
 Bibliotecaria: ¿Así sin más? Lárgate, Nyx.
 Nyx: ...Rata. 
+<<TriggerEndDialogue>>
 ===
 
 title: Librarian2b
 position: 987,-587
 ---
 Bibliotecaria: ¿¡Pero a ti que te pasa!? ¡Eso no son formas de pedir favores!
+<<TriggerEndDialogue>>
 ===
 
 title: Librarian2c
@@ -221,6 +240,7 @@ Nyx:...
 <<set $phaseLib = 3>>
 Nyx: (DEBERÍA RELACIONARME CON OTROS ALDEANOS Y QUEDAR BIEN)
 <<declare $peopleHelped = 0 as number>>
+<<TriggerEndDialogue>>
 ===
 
 title: Librarian3
@@ -228,6 +248,7 @@ tags:
 position: 696,-443
 ---
 Bibliotecaria: Habla con al menos tres personajes y que queden contentos.
+<<TriggerEndDialogue>>
 ===
 
 title: Librarian4
@@ -247,6 +268,7 @@ Bibliotecaria: Hazme caso Nyx...
 Nyx: Al final muero de frío.
 <<set $phaseLib = 5>>
 Nyx: (DEBERÍA LLEVARLE EL LIBRO AL CABALLERO)
+<<TriggerEndDialogue>>
 ===
 
 title: Librarian5
@@ -254,7 +276,8 @@ tags:
 position: 697,-165
 ---
 Bibliotecaria: Hazme caso Nyx...
-Nyx: (DEBERÍA VOLVER DE NUEVO CON EL CABALLERO)
+Nyx: (DEBERÍA LLEVARLE EL LIBRO AL CABALLERO)
+<<TriggerEndDialogue>>
 ===
 
 
@@ -266,6 +289,7 @@ position: 146,49
 <<declare $coupleHelped = false as bool>>
 Nyx: Me da asco el estiércol, dejad de oler así.
 Pareja: Lárgate Nyx.
+<<TriggerEndDialogue>>
 ===
 
 title: Couple2
@@ -284,6 +308,7 @@ title: Couple2a
 position: 426,48
 ---
 Pareja: Lárgate Nyx.
+<<TriggerEndDialogue>>
 ===
 
 title: Couple2b
@@ -291,6 +316,7 @@ position: 425,189
 ---
 Pareja: Es lo que tiene trabajar con estiércol, Nyx.
 Pareja: Ahora estamos haciendo un descanso. Déjanos.
+<<TriggerEndDialogue>>
 ===
 
 title: Couple2c
@@ -304,6 +330,7 @@ Pareja: Cuídate Nyx.
 <<set $coupleHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LA PAREJA)
+<<TriggerEndDialogue>>
 ===
 
 
@@ -315,6 +342,7 @@ position: 691,48
 <<declare $clericHelped = false as bool>>
 Clérigo: ¿Cómo estás, Nyx? Me alegro de verte.
 Nyx: Déjame.
+<<TriggerEndDialogue>>
 ===
 
 title: Cleric2
@@ -334,6 +362,7 @@ position: 977,42
 ---
 Clérigo: ¡Porque están haciendo voto de silencio! ¡Déjalas en paz!
 Nyx: Perdón.
+<<TriggerEndDialogue>>
 ===
 
 title: Cleric2b
@@ -341,6 +370,7 @@ position: 978,186
 ---
 Clérigo: ¡Basta Nyx!
 Nyx: Perdón.
+<<TriggerEndDialogue>>
 ===
 
 title: Cleric2c
@@ -355,6 +385,7 @@ Nyx: ...Me alegro de verte. Adiós.
 <<set $clericHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL CLÉRIGO)
+<<TriggerEndDialogue>>
 ===  
 
 
@@ -366,6 +397,7 @@ position: -421,48
 <<declare $archerHelped = false as bool>>
 Nyx: ¿Qué miras? Este lago no tiene nada de bonito.
 Arquero: Déjame Nyx.
+<<TriggerEndDialogue>>
 ===
 
 title: Archer2
@@ -385,12 +417,14 @@ title: Archer2a
 position: -151,48
 ---
 Arquero: ¡Pero a ti que te pasa por la cabeza! Vete.
+<<TriggerEndDialogue>>
 ===
 
 title: Archer2b
 position: -152,190
 ---
 Arquero: ¡ESTATE QUIETO NYX!¡NO TIENE GRACIA!¡VETE!
+<<TriggerEndDialogue>>
 ===
 
 title: Archer2c
@@ -403,6 +437,7 @@ Arquero: ¡Pero gracias Nyx! ¡Me alegra saber que te preocupas por las personas
 <<set $archerHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LA ARQUERO)
+<<TriggerEndDialogue>>
 ===
 
 
@@ -415,6 +450,7 @@ position: -421,556
 <<declare $elfHelped = false as bool>>
 Nyx: Mira, un elfo. Conocidos por su inmortalidad, gracia y narcisismo.
 Elfo: Que tengas también un buen día, Nyx.
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -437,6 +473,7 @@ Elfo: Mejor ser soso que ser un estúpido ¿verdad... Nyx?
 Nyx: Cállate rata.
 Elfo: Hablas de las ratas como si fueran malas, y son seres vivos que...
 Nyx:  Hay algo peor en esta vida que ser una rata. Ser un turras.
+<<TriggerEndDialogue>>
 ===
 
 title: Elf2b
@@ -444,6 +481,7 @@ position: -155,701
 ---
 Elfo: Hacemos cosas mal y aprendemos de ello. Es algo que a ti te cuesta entender. 
 Nyx: Me cuesta entender que alguien te soporte. Rata.
+<<TriggerEndDialogue>>
 ===
 
 title: Elf2c
@@ -460,6 +498,7 @@ Nyx: Por favor, no menciones mi nombre en la canción. Los mortales apreciamos t
 <<set $elfHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL ELFO)
+<<TriggerEndDialogue>>
 === 
 
 
@@ -472,6 +511,7 @@ position: 142,555
 <<declare $mushroomsHelped = false as bool>>
 Nyx: No sé ni como dirigirme a vosotras.
 Setas: (LAS SETAS MIRAN FIJAMENTE A NYX SIN EXPRESIÓN)
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -491,12 +531,14 @@ title: Mush2a
 position: 430,557
 ---
 Setas: (LAS SETAS MIRAN FIJAMENTE A NYX SIN EXPRESIÓN)
+<<TriggerEndDialogue>>
 ===
 
 title: Mush2b
 position: 429,701
 ---
 Setas: (LAS SETAS MIRAN FIJAMENTE A NYX SIN EXPRESIÓN)
+<<TriggerEndDialogue>>
 ===
 
 title: Mush2c
@@ -508,6 +550,7 @@ Setas: (LAS SETAS MIRAN A NYX CON ALEGRÍA)
 <<set $mushroomsHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LAS SETAS)
+<<TriggerEndDialogue>>
 === 
 
 
@@ -520,6 +563,7 @@ Nyx: Te puedo oler desde el otro lado del lago.
 Oso: Qué buen olfato tienes, Nyx.
 Nyx: Te huelen desde allí hasta los humanos. Dúchate guarro.
 Oso: Es increíble que sigas vivo, Nyx. Largo de mi vista.
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -542,6 +586,7 @@ Oso: Hibernamos para conservar energía y poder así lidiar con
 Oso: personajes como tú durante las otras estaciones del año. 
 Nyx: Estúpida rata de 4 metros mal educada. Tengo sentimientos.
 Oso: Me cansas, Nyx. 
+<<TriggerEndDialogue>>
 ===
 
 title: Bear2b
@@ -550,6 +595,7 @@ position: 983,702
 Oso: Espera...¿PERO TÚ ERES CONSCIENTES DE LO QUE DICES?
 Nyx: ¡SOLO DIGO QUE ME GUSTARÍA TENER TU PELAJE! No se puede hablar contigo.
 Oso: Me haces desear hibernar de nuevo, y solo estamos en primavera.
+<<TriggerEndDialogue>>
 ===
 
 title: Bear2c
@@ -562,6 +608,7 @@ Oso: Pero me alegro mucho que me reconozcas y me tengas en cuenta.
 <<set $bearHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL OSO)
+<<TriggerEndDialogue>>
 ===
 
 
@@ -578,6 +625,7 @@ Nyx: Lanza un rayo al agua. A ver que pasa.
 Bumbledore: ¡¿PERO A TI QUE TE PASA POR LA CABEZA?! ¡Misty está en esa barca!
 Misty: ¿Qué ocurre?
 Bumbledore: Nada, no te preocupes.
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -602,6 +650,7 @@ Misty: Tampoco le cuesta nada hacer un hechizo de viento
 Misty: para que salgas volando y dejes de dar la brasa.
 Nyx: Cállate rata alada.
 Bumbledore: Largo de aquí. 
+<<TriggerEndDialogue>>
 ===
 
 title: Wiz2b
@@ -612,6 +661,7 @@ Nyx: Me minas la moral.
 Bumbledore: Tú no tienes de eso. Ni chimenea.
 Nyx: Ahí has estado fino. Sorprende ver lucidez a esa edad.
 Bumbledore: Fuera.
+<<TriggerEndDialogue>>
 ===
 
 title: Wiz2c
@@ -626,6 +676,7 @@ Bumbledore: ¡Cierto! Gracias Nyx, quizás tenga que salir más a menudo como ho
 <<set $wizardHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON ESTOS DOS)
+<<TriggerEndDialogue>>
 === 
 
 
@@ -638,6 +689,7 @@ Nyx: ¿Qué, intentando calentar a la bibliotecaria quedándote sin camisa?
 Leñador: ¡QUE TE HE DICHO MIL VECES QUE TENGO MARIDO, NYX!
 Leñador: ¡COMO VUELVAS A HACER ESA BROMA, TE ARRANCO LOS MECHONES!
 Nyx: No te sulfures, si yo solo venía a calentarme en la hoguera.
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -658,6 +710,7 @@ position: 432,1053
 ---
 Leñador: Mira mequetrefe impertinente, si no fuera por esas chimeneas ahora 
 Leñador: podría estar ganándome mucho mejor la vida con la leña. Largo.
+<<TriggerEndDialogue>>
 ===
 
 title: Wood2b
@@ -665,6 +718,7 @@ position: 434,1193
 ---
 Leñador: ¡ME QUITO LA CAMISA PORQUE IMPIDE EL MOVIMIENTO DEL CORTE VERTICAL!
 Leñador: ¡¿ES QUE NO TIENES COSAS QUE HACER, NYX?!
+<<TriggerEndDialogue>>
 ===
 
 title: Wood2c
@@ -682,6 +736,7 @@ Leñador: Bueno, gracias Nyx por alegrarte por mi negocio.
 <<set $woodcutterHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON EL LEÑADOR)
+<<TriggerEndDialogue>>
 === 
 
 
@@ -692,12 +747,14 @@ title: Employee1
 position: 149,1385
 ---
 Empleado: ...
+<<TriggerEndDialogue>>
 ===
 
 title: Employee2
 position: 151,1533
 ---
 Empleado: Habla con mi jefe. Está ahí cortando leña.
+<<TriggerEndDialogue>>
 ===
 
 
@@ -712,6 +769,7 @@ Nyx: Si hay algo peor que los perros, son las personas que le gustan los perros.
 Montaraz: Para empezar, no son perros, son hombres lobo.
 Nyx: ¡NO FASTIDIES!¡MITAD CHUCHO Y MITAD HUMANO! ¡JUAJAUAJAUA ES RIDÍCULO!
 Hombres lobo: ...Estámos aquí delante colega...
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -732,13 +790,15 @@ position: -152,1049
 ---
 Montaraz: Estúpido gato metomentodo. ¡Muestra respeto!
 Hombres lobo: Déjalo, montaraz, estamos acostumbrados...
+<<TriggerEndDialogue>>
 ===
 
 title: ManWolves2b
 position: -151,1192
 ---
 Hombre lobo: Colega. Yo puedo controlarme...
-Hombres lobo: Mi hijo no. 
+Hombres lobo: Mi hijo no.
+<<TriggerEndDialogue>>
 ===
 
 title: ManWolves2c
@@ -752,6 +812,7 @@ Nyx: Y sentimientos.
 <<set $manWolvesHelped = true>>
 
 Nix: (PUES PARECE QUE ERA FÁCIL QUEDAR BIEN CON LOS RARETES)
+<<TriggerEndDialogue>>
 ===
 
 
@@ -765,6 +826,7 @@ position: -430,1446
 Nyx: Estúpida chucho-rata pulgosa y peluda. Eres la cosa más tonta que conozco,
 Nyx: Y mira que en este pueblo hay tontos.
 Perro: (¡PERRO QUIERE A NYX! ¡NYX ES MEJOR AMIGO! ¡NYX QUIERE A PERRO!)
+<<TriggerEndDialogue>>
 ===
 
 ///Conversación para questLibrarian
@@ -779,6 +841,7 @@ Perro: (¡NYX ES EL MEJOR!¡SIEMPRE SALUDA A PERRO!¡NYX ES MEJOR AMIGO POR SIEM
 <<set $dogHelped = true>>
 
 Nix: (ES TAN TONTO QUE HE QUEDADO BIEN CON ÉL SIN QUERER)
+<<TriggerEndDialogue>>
 ===
 title: Nyx
 position: -415,-1021
@@ -786,4 +849,13 @@ position: -415,-1021
 Nyx: ¡PARDIEZ! No tengo fuego...
 Nyx: Tendré que ir a hablar con esa rata en forma de dragón, vaya palo...
 Nyx: Estará en su casa al sur del pueblo.
+<<TriggerEndDialogue>>
+===
+
+title: Nyx2
+position: -415,-884
+---
+Nyx: (YA HE AYUDADO A SUFICIENTES RATAS... QUE ASCO)
+Nyx: (DEBERÍA VOLVER DE NUEVO CON LA BIBLIOTECARIA)
+<<TriggerEndDialogue>>
 ===
