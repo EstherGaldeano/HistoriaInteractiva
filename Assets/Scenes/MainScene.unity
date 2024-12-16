@@ -11599,7 +11599,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 50
-      m_TileSpriteIndex: 58
+      m_TileSpriteIndex: 59
       m_TileMatrixIndex: 0
       m_TileColorIndex: 31
       m_TileObjectToInstantiateIndex: 65535
@@ -11829,7 +11829,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 51
-      m_TileSpriteIndex: 56
+      m_TileSpriteIndex: 58
       m_TileMatrixIndex: 0
       m_TileColorIndex: 31
       m_TileObjectToInstantiateIndex: 65535
@@ -12009,7 +12009,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 56
       m_TileMatrixIndex: 0
       m_TileColorIndex: 31
       m_TileObjectToInstantiateIndex: 65535
@@ -12229,7 +12229,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 31
       m_TileObjectToInstantiateIndex: 65535
@@ -12309,7 +12309,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 31
       m_TileObjectToInstantiateIndex: 65535
@@ -12369,7 +12369,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 31
       m_TileObjectToInstantiateIndex: 65535
@@ -13068,18 +13068,18 @@ Tilemap:
     m_Data: {fileID: 6110084883823637070, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 759447965, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 2142347646115313125, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: -1655519630, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1276321424407079909, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
+    m_Data: {fileID: 2142347646115313125, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1855869710, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
+    m_Data: {fileID: 1276321424407079909, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 6386714415849468896, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -6265856406282734618, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
+    m_Data: {fileID: -1855869710, guid: 748cb023c21e50b45a2ef5d313d33492, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 192824840, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
   - m_RefCount: 2
@@ -13175,13 +13175,13 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1613496174233749402, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 911836616, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
+    m_Data: {fileID: -6265856406282734618, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -40776033, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 911836616, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 744867381, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -600760652, guid: 1cd3f60cbc88e7846a504168712c85fc, type: 3}
   - m_RefCount: 1
@@ -19186,7 +19186,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 26.6
+  field of view: 34
   orthographic: 0
   orthographic size: 3.39
   m_Depth: -1
@@ -20201,10 +20201,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
