@@ -10,6 +10,8 @@ public class DialogueTrigger : MonoBehaviour
    
     public InMemoryVariableStorage inMemoryVariableStorage;
 
+    public Timer timerScript;
+
     void Start()
     {
         if(this.gameObject.tag == "Book")
@@ -64,6 +66,11 @@ public class DialogueTrigger : MonoBehaviour
                 this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
                 this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
             }
+        }
+
+        if(dragonPhase == 5)
+        {
+            timerScript.Victory();
         }
 
         if (peopleHelpedNumber >= 3)

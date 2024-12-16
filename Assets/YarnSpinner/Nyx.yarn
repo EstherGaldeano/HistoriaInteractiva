@@ -321,11 +321,11 @@ title: Cleric2
 position: 690,187
 ---
 Nyx: Ehmm...
--> Qué calladas son tus hermanas. Las miro y no dicen nada.
+-> Nyx: Qué calladas son tus hermanas. Las miro y no dicen nada.
 	<<jump Cleric2a>>
--> El celibato tiene que ser duro... 
+-> Nyx: El celibato tiene que ser duro... 
 	<<jump Cleric2b>>
--> Me alegro de verte. Hoy irradias fe.
+-> Nyx: Me alegro de verte. Hoy irradias fe.
 	<<jump Cleric2c>>
 ===
 
@@ -373,11 +373,11 @@ position: -421,190
 ---
 Nyx: Bueno, a ver...
 
--> Bonito arco ¿Jugamos a tirar flechas a la gente? Lo pasaremos bien.
+-> Nyx: Bonito arco ¿Jugamos a tirar flechas a la gente? Lo pasaremos bien.
 	<<jump Archer2a>>
--> (Intentar empujar al arquero al agua para gastarle una broma)
+-> Nyx: (Voy a empujar al arquero al agua para gastarle una broma)
 	<<jump Archer2b>>
--> Hola. Siento molestarte. Solo quería saber si estás bien. Pareces desanimado.
+-> Nyx: Hola. Siento molestarte. Solo quería saber si estás bien. Pareces desanimado.
 	<<jump Archer2c>>
 ===
 
@@ -422,11 +422,11 @@ title: Elf2
 position: -420,700
 ---
 Nyx: Vamos a ver...
--> ¿A qué edad os volvéis sosos los elfos? ¿O sois así de nacimiento?
+-> Nyx: ¿A qué edad os volvéis sosos los elfos? ¿O sois así de nacimiento?
     <<jump Elf2a>>
--> ¿A los elfos se os da algo mal en la vida?
+-> Nyx: ¿A los elfos se os da algo mal en la vida?
     <<jump Elf2b>>
--> Me pregunto si sigues teniendo inquietudes después de tantos años...
+-> Nyx: Me pregunto si sigues teniendo inquietudes después de tantos años...
     <<jump Elf2c>>
 ===
 
@@ -479,11 +479,11 @@ title: Mushrooms2
 position: 143,702
 ---
 Nyx: Esto va a ser difícil
--> ¿Si os orino crecéis? 
+-> Nyx: ¿Si os orino crecéis? 
     <<jump Mush2a>>
--> Estoy en contra de la recolección de setas. Las probé y estáis malísimas.
+-> Nyx: Estoy en contra de la recolección de setas. Las probé y estáis malísimas.
     <<jump Mush2b>>
--> Reconozco que vuestro diseño natural es excelente y llamativo. 
+-> Nyx: Reconozco que vuestro diseño natural es excelente y llamativo. 
     <<jump Mush2c>>
 ===
 
@@ -527,11 +527,11 @@ title: Bear2
 position: 689,701
 ---
 Nyx: Saludos, tío grande.
--> Entre tú y yo. Lo de hibernar es para dejar de ver a la gente ¿no?
+-> Nyx: Entre tú y yo. Lo de hibernar es para dejar de ver a la gente ¿no?
     <<jump Bear2a>>
--> Que envidia me da tu pelaje. Ojalá comprarme uno.
+-> Nyx: Que envidia me da tu pelaje. Ojalá comprarme uno.
     <<jump Bear2b>>
--> Me alegra ver que nadie del pueblo se asusta de ti. 
+-> Nyx: Me alegra ver que nadie del pueblo se asusta de ti. 
     <<jump Bear2c>>
 ===
 
@@ -585,11 +585,11 @@ title: WizardAndFairy2
 position: 685,1194
 ---
 Nyx: Veamos...
--> ¿Sabes de algún hechizo gratis para arreglar chimeneas imperecederas?
+-> Nyx: ¿Sabes de algún hechizo gratis para arreglar chimeneas imperecederas?
     <<jump Wiz2a>>
--> ¿Te da miedo el agua? ¿A tu edad?
+-> Nyx: ¿Te da miedo el agua? ¿A tu edad?
     <<jump Wiz2b>>
--> Misty y tú tenéis una gran amistad. Debéis estar orgullosos. 
+-> Nyx: Misty y tú tenéis una gran amistad. Debéis estar orgullosos. 
     <<jump Wiz2c>>
 ===
 
@@ -645,11 +645,11 @@ title: Woodcutter2
 position: 144,1193
 ---
 Nyx: Holi.
--> Tengo una chimenea imperecedera. Van muy bien. Cómprate una.
+-> Nyx: Tengo una chimenea imperecedera. Van muy bien. Cómprate una.
     <<jump Wood2a>>
--> ¿Por qué te quitas la camisa?¿Demuestras a tus empleados que eres el alfa?
+-> Nyx: ¿Por qué te quitas la camisa?¿Demuestras a tus empleados que eres el alfa?
     <<jump Wood2b>>
--> Veo que tenéis trabajo, me alegro de que el negocio os vaya bien.
+-> Nyx: Veo que tenéis trabajo, me alegro de que el negocio os vaya bien.
     <<jump Wood2c>>
 ===
 
@@ -719,11 +719,11 @@ title: ManWolves2
 position: -420,1192
 ---
 Nyx: Esto me va a ser difícil
--> Debe hacer ilusión ser amigo de hombres lobo. Ver a un chucho razonar es un logro.
+-> Nyx: Debe hacer ilusión ser amigo de hombres lobo. Ver a un chucho razonar es un logro.
     <<jump ManWolves2a>>
--> Llevo todo el año luchando para que hagan un pipicán. Merecéis una integración justa.
+-> Nyx: Llevo todo el año luchando para que hagan un pipicán. Merecéis una integración justa.
     <<jump ManWolves2b>>
--> No debe ser fácil ser como vosotros. Ojalá os sintáis a gusto y aceptados en este pueblo.
+-> Nyx: No debe ser fácil ser como vosotros. Ojalá os sintáis a gusto y aceptados en este pueblo.
     <<jump ManWolves2c>>
 ===
 

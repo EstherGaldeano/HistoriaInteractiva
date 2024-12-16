@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &44162408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -435,7 +436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 103}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 692.3745, y: 323.9266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &72077056
@@ -8273,6 +8274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &222598133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8422,6 +8424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &233525963
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9178,6 +9181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &243678243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9508,6 +9512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &392376518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13633,6 +13638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &492603119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14427,6 +14433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &688513256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14507,7 +14514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 103}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 828.073, y: 323.9266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726833074
@@ -14712,6 +14719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &754889311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14862,6 +14870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &782921021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15186,6 +15195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &828946343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15383,8 +15393,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1000023761}
   - component: {fileID: 1000023763}
+  - component: {fileID: 1000023765}
   m_Layer: 0
-  m_Name: 
+  m_Name: VictoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15425,6 +15436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!222 &1000023763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15479,6 +15491,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.17, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &1000023765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000023760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7529412}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1004756223
 GameObject:
   m_ObjectHideFlags: 0
@@ -18100,6 +18142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1334057736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18324,6 +18367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1360138610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18473,6 +18517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1363205875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18552,6 +18597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1390296982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18641,7 +18687,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 299
   m_Sprite: {fileID: -7051933360408875947, guid: 7594fbefd9960784ea941b0096f41956, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18681,6 +18727,7 @@ GameObject:
   - component: {fileID: 1401332132}
   - component: {fileID: 1401332131}
   - component: {fileID: 1401332130}
+  - component: {fileID: 1401332135}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18702,6 +18749,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 447126729}
   remainingTime: 600
+  gameoverPanel: {fileID: 176835386}
+  victoryPanel: {fileID: 1000023760}
+  player: {fileID: 1004756223}
 --- !u!114 &1401332131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18788,6 +18838,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1401332135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401332129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945bc6fe055f3c54480fc44a0862b5b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1415470403
 GameObject:
   m_ObjectHideFlags: 0
@@ -18938,6 +19000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1415470408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19221,6 +19284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1510686924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19417,6 +19481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1544253646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19649,6 +19714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!222 &1673781475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20030,6 +20096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1852345160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20226,6 +20293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1864182831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20422,6 +20490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &1906526165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108623,6 +108692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &2124532702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108881,6 +108951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2085108025}
   inMemoryVariableStorage: {fileID: 2085108027}
+  timerScript: {fileID: 1401332130}
 --- !u!61 &2133811097
 BoxCollider2D:
   m_ObjectHideFlags: 0
